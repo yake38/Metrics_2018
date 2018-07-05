@@ -1,6 +1,6 @@
 # Introduction to Econometrics at Business School, Nanjing University, Fall 2018 
 
-# Slides in 2017
+## Slides in 2017
 
 - [Lecture 0](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Slides/2017_Lec0.pdf)
 - [Lecture 1](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Slides/2017_Lec1.pdf)
