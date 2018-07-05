@@ -1,2 +1,2 @@
 # 2018
-Introduction to Econometrics, 2018 Fall
+Introduction to Econometrics, Business School, Nanjing University, Fall 2018
