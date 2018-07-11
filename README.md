@@ -25,3 +25,30 @@
 - [Lecture 11](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Slides/2017_Lec11.pdf)
 - [Lecture 12](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Slides/2017_Lec12.pdf)
 - [Lecture 13](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Slides/Final_Review_print.pdf)
+
+### Computer Lab Exercise(上机练习）
+
+1. Introdution(I): R
+2. Introdution(II) 
+3. Ordinary Least Squres(OLS) 
+4. Matching 
+5. Decomposition(DEM)
+6. Instrumental Variable(IV)
+7. Regression Discountinuity(RD)
+8. Fixed Effect and DID(DID)
+
+### Homeworks(课后作业）
+
+- HW1
+- HW2
+- HW3 
+- HW4 
+- HW5 
+
+### Research Projects(Proposal) 
+
+
+
+
+
+
