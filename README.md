@@ -6,7 +6,7 @@
 
 ### Syllabus(课程计划）
 
-- [Syllbus](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Syllabus/syllabus2018.pdf) 
+- [Syllabus](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Syllabus/syllabus2018.pdf) 
 
 ### Slides(课堂讲义）
 
@@ -28,7 +28,7 @@
 
 ### Computer Lab Exercise(上机练习）
 
-1. Introdution(I): R
+1. Introdution(I): [R] (https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Lab/01_R_install.pdf.pdf)
 2. Introdution(II) 
 3. Ordinary Least Squres(OLS) 
 4. Matching 
