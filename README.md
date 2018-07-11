@@ -28,7 +28,7 @@
 
 ### Computer Lab Exercise(上机练习）
 
-1. Introdution(I): [R] (https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Lab/01_R_install.pdf.pdf)
+1. Introdution(I): [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Lab/01_R_install.pdf.pdf)
 2. Introdution(II) 
 3. Ordinary Least Squres(OLS) 
 4. Matching 
