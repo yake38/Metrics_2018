@@ -4,13 +4,13 @@
 
 ### Syllabus 
 
+- [Syllabus](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Syllabus/syllabus2018.pdf) 
+
 
 ## 2017年
 
 
 ### Syllabus(课程计划）
-
-- [Syllabus](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Syllabus/syllabus2018.pdf) 
 
 ### Slides(课堂讲义）
 
