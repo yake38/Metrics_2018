@@ -1,0 +1,2485 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{xeCJK}
+%\setCJKmainfont{STZhongsong} 
+\usepackage{sectsty} 
+\sectionfont{\centering} 
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks false
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "unicode=false"
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 2cm
+\bottommargin 2.54cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+Introduction to Econometrics
+\end_layout
+
+\begin_layout Author
+
+\emph on
+Business School, Nanjing University
+\end_layout
+
+\begin_layout Date
+
+\emph on
+Fall, 2018
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\color black
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\color black
+Instructor:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Zhaopeng Qu (曲兆鹏）
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\color black
+Phone:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
++86-8362-1349(O)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\color black
+Email:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset CommandInset href
+LatexCommand href
+name "qu@nju.edu.cn"
+target "qu@nju.edu.cn"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\color black
+Office:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+安中楼 2021 (Gulou Campus)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\color black
+Course Website
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset CommandInset href
+LatexCommand href
+name "Course Web"
+target "https://metricsnju.github.io/Metrics_2018/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\color black
+GSI:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Zixin Zhou(周子莘）Jing Bu(卜京）
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Wechat ID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\color black
+Public Email:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+\begin_inset CommandInset href
+LatexCommand href
+name "jl2017f@126.com"
+target "jl2017f@126.com"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\color black
+Location: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+逸B-313(Xianlin Campus)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\color black
+Time: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Monday 9：00-12：00 am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Course Description
+\end_layout
+
+\begin_layout Standard
+
+\size large
+This course introduces students to modern causal inference methods for analyzing
+ data in economics and other social sciences.
+ The goal is to help student develop a solid theoretical background in introduct
+ory level econometrics, the ability to implement modern techniques and to
+ critique empirical studies in economics and other social sciences.
+ Specifically, we will learn 
+\color red
+six
+\color inherit
+ modern econometric research design techniques that aim to credibly estimate
+ causal effects: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size large
+Randomized Controlled Trial(RCT) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size large
+Regression(OLS) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size large
+Decomposition(WD)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size large
+Instrumental Variables(IV) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size large
+Regression Discontinuity Designs(RDD) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size large
+Differences-in-Differences(DID) 
+\end_layout
+
+\begin_layout Standard
+
+\size large
+At the end, students mastering tools will use at least one of them to finish
+ an empirical research project.
+ 
+\end_layout
+
+\begin_layout Section*
+Evaluation
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+出勤率 （Participation）（10%） 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+作业 （Homework） （20%） 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+期末考试 (Final exam) (40%)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+研究计划 (Group project) (30%)
+\end_layout
+
+\begin_layout Section*
+Textbooks
+\end_layout
+
+\begin_layout Subsection*
+
+\emph on
+Econometrics
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+James H.
+ Stock and Mark W.
+ Watson, 
+\emph on
+Introduction to Econometrics
+\emph default
+, 3rd Edition, Addison-Wesley, 2012.
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Jeffrey M.
+ Wooldridge,
+\emph on
+ Introductory Econometrics: A Modern Approach
+\emph default
+, 5th Edition, South-Western College, 2013.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Joshua Angrist and Jorn-Steffen Pischke, 
+\emph on
+Mastering' Metrics: The Path from Cause to Effect, 
+\emph default
+Princeton press, 2015.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Joshua Angrist and Jorn-Steffen Pischke, 
+\emph on
+Mostly Harmless Econometrics: An Empiricist's Companion
+\emph default
+, Princeton press, 2008.
+ 
+\end_layout
+
+\begin_layout Subsection*
+
+\emph on
+Computing Softwares： Stata and R 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+任意一本关于Stata 或者 R 操作的中文书
+\end_layout
+
+\begin_layout Section*
+Additional Readings
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Steven D.
+ Levitt and Stephen J.
+ Dubner, Freakonomics: A Rogue Economist Explores the Hidden Side of Everything,
+ 2005.
+ (中译本《魔鬼经济学》 斯蒂夫
+\begin_inset Formula $\cdot$
+\end_inset
+
+列维特和斯蒂芬
+\begin_inset Formula $\cdot$
+\end_inset
+
+都伯纳著，广东经济出版社，2006年1月。) 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Steven D.
+ Levitt and Stephen J.
+ Dubner, SuperFreakonomics: Global Cooling, Patriotic Prostitutes, and Why
+ Suicide Bombers Should Buy Life Insurance, 2009.（中译本，《超爆魔鬼经济学》，斯蒂夫
+\begin_inset Formula $\cdot$
+\end_inset
+
+列维特和斯蒂芬
+\begin_inset Formula $\cdot$
+\end_inset
+
+都伯纳著，中信出版社，2010年1月。） 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Ian Ayres, Super Crunchers: Why Thinking-By-Numbers is the New Way To Be
+ Smart, 2007.
+ (中译本《超级数字天才》，伊恩
+\begin_inset Formula $\cdot$
+\end_inset
+
+艾瑞斯著，中国青年出版社，2008年1月。) 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Raymond Fisman and Edward Miguel, Economic Gangster：Corruption, Violence
+ and the Poverty of Nations, 2008.
+ (中译本《经济黑帮：腐败、暴力的黑帮经济学》，中信出版社，2010年8月)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Abhijit V.
+ Banerjee & Esther Duflo, Poor Economics A Radical Rethinking of the Way
+ to Fight Global Poverty, 2011.(中译本:《贫穷的本质：我们为什么摆脱不了贫穷》，中信出版社。） 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angus Deaton, The Great Escape:Health,Wealth,and the Origins of Inequality,2015.(
+中译本: 《逃离不平等: 健康、财富及不平等的起源》，中信出版社。）
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+涂子沛，《大数据：正在到来的数据革命，以及它如何改变政府、商业与我们的生活》，广西师范大学出版社，2012年7月。
+\end_layout
+
+\begin_layout Section*
+Schedule
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Week
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Topic 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Introduction 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Causal Inference and Experimental Method(I)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Causal Inference and Experimental Method(II)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regression(I) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regression(II) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10/4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regression(III) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10/11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regression(IV) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10/18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regression(V) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10/25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Decomposition(I) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Decomposition(II) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instrumental Variable(I)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Instrumental Variable(II)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regression Discontinuity(I) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Regression Discontinuity(II) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Difference in Differences(I)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Difference in Differences(II)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Final Review
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lab/Recite Session
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Week
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Topic 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Location
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Recite 1: Probability Review
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-303
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8:00-10:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Recite 2: Statistics Review
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-303
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8:00-10:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lab1: Introduction to Stata and R
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-407
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8:00-10:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lab2: Introduction to Stata and R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9/25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-407
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8:00-10:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lab3: OLS in Stata and R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10/16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-407
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8:00-10:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lab4: OLS in Stata and R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10/30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-407
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8:00-10:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lab5: DE in Stata and R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-407
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9:00-12:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lab6: IV in Stata and R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11/22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-407
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9:00-12:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lab7: RD in Stata and R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-407
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9:00-12:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Lab8:DID in Stata and R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-407
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9:00-12:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Recite 3: Full Review
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+逸夫楼B-313
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9:00-12:00am
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\size large
+Outline
+\end_layout
+
+\begin_layout Paragraph*
+
+\size large
+(Preliminary, to be adjusted possibly)
+\end_layout
+
+\begin_layout Subsection
+Introduction
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+What the course is about? What is the benefit if we learn it? How to learn
+ it?
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Probability and Statistics Review
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 2-3.
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Appendix A, B & C.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Causal Inference in Social Science and Randomized Experiment(I)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 1 & 13
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014): Chapter 1
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 1-2 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Probability and Statistics Review
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 2-3.
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Appendix A, B & C.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Causal Inference in Social Science and Randomized Experiment(II)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 1 & 13
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014): Chapter 1
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 1-2 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Probability and Statistics Review
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 2-3.
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Appendix A, B & C.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Regression (I): Simple OLS-Estimation
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 4-5, 17
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Chapter 2
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014):Chapter 2 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 3
+\end_layout
+
+\begin_layout Subsection
+Regression (II)- Multiple OLS-Hypothesis Test 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 6-7
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Chapter 3, 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 3
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014): Chapter 2 
+\end_layout
+
+\begin_layout Subsection
+Regression Review (III): Multiple OLS-Estimation and Hypothesis Test 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 6-7
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Chapter 4-5
+\end_layout
+
+\begin_layout Subsection
+Regression Review (IV): Nonlinear Regression Functions
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 8-9
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Chapter 6-8
+\end_layout
+
+\begin_layout Subsection
+Regression Review (V): Binary Dependent Variables 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock and Watson (2012): Chapter 11
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Chapter 9 & 17
+\end_layout
+
+\begin_layout Subsection
+Inequality Decomposition(I)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Fortin, Lemieux and Firpo(2010), “Decomposition Method” in the Handbook
+ of Labor Economics , Vol(4).
+ 
+\end_layout
+
+\begin_layout Subsection
+Inequality Decomposition(II)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Fortin, Lemieux and Firpo(2010), “Decomposition Method” in the Handbook
+ of Labor Economics , Vol(4).
+ 
+\end_layout
+
+\begin_layout Subsection
+Instrumental Variables (I)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock andWatson (2012): Chapter 12
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Chapter 15
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014): Chapter 3
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 4
+\end_layout
+
+\begin_layout Subsection
+Instrumental Variables (II)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock andWatson (2012): Chapter 12
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Chapter 15
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014): Chapter 3
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 4
+\end_layout
+
+\begin_layout Subsection
+Regression Discontinuity (I)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 4
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014): Chapter 4
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Guido W.
+ Imbens and Thomas Lemieux (2007), “Regression discontinuity designs: A
+ guide to practice”, Journal of Econometrics, 142(2), pp.615-635.
+\end_layout
+
+\begin_layout Subsection
+Regression Discontinuity (II)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 4
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014): Chapter 4
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Guido W.
+ Imbens and Thomas Lemieux (2007), “Regression discontinuity designs: A
+ guide to practice”, Journal of Econometrics, 142(2), pp.615-635.
+\end_layout
+
+\begin_layout Subsection
+Difference in Differences (I)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014): Chapter 5
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 5
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock andWatson (2012): Chapter 10
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Chapter 13
+\end_layout
+
+\begin_layout Subsection
+Difference in Differences (II)
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2014): Chapter 5
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Angrist and Pischke (2008): Chapter 5
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Stock andWatson (2012): Chapter 10
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Wooldridge (2013): Chapter 13
+\end_layout
+
+\begin_layout Subsection
+Final Review
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
