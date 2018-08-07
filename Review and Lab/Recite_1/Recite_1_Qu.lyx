@@ -1,0 +1,4489 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usefonttheme[onlymath]{serif}
+\usepackage{fontspec}
+
+%\setmainfont{Times New Roman}
+%\setsansfont{Arial}
+%\setmonofont{Courier New}
+% 设定中文字体
+\usepackage{xeCJK}
+\usepackage{xcolor}
+\usetheme{Madrid}
+
+
+
+%\usebeamercolor[fg]{smokyblack}
+%\usebeamercolor[fg]{section in toc} 
+
+%\setbeamercolor{section in toc}{fg=black}
+
+%\defbeamertemplate*{section page}{default}[1][]
+%{
+%  \begingroup
+%    \centering
+%    {\usebeamerfont{section name}\usebeamercolor[fg]{section name}\sectionname~\insertsectionnumber}
+%    \vskip1em\par
+%    \begin{beamercolorbox}[sep=12pt,center,#1]{part title}
+%      \usebeamerfont{section title}\insertsection\par
+%    \end{beamercolorbox}
+%  \endgroup
+%}
+
+
+
+\AtBeginSection[]{
+ \begin{frame}
+   \vfill
+   \centering
+   \setbeamercolor{mycolor}{bg=white,fg=blue}
+   \begin{beamercolorbox}[sep=14pt,center,shadow=false,rounded=true]{mycolor}
+   \usebeamerfont{title}\insertsectionhead\par%
+   \end{beamercolorbox}
+   \vfill
+   \end{frame}
+}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 3
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "unicode=false"
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch Deleted
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Introduction to Econometrics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+
+\emph on
+Recite 1 : Review of Probability Theory 
+\end_layout
+
+\begin_layout Author
+
+\series bold
+Zhaopeng Qu
+\end_layout
+
+\begin_layout Institute
+
+\series bold
+Business School,Nanjing University
+\series default
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Nanjing University
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+Sep.
+ 11th, 2017
+\end_layout
+
+\begin_layout TitleGraphic
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/byelenin/Dropbox/Lyx/NJUlogo.png
+	lyxscale 50
+	width 10page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamersetuncovermixins{
+\backslash
+opaqueness<1->{10}}{
+\backslash
+opaqueness<1->{95}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outlines
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[pausesections]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Section
+Probabilities, the Sample Space and Random Variables
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+A Fundamental Axiom of Econometrics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+\color black
+Any economy can be viewed as a 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+stochastic process 
+\end_layout
+
+\end_inset
+
+governed by some probability law.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\color black
+Economic phenomenon, as often summarized in form of data, can be reviewed
+ as a 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+realization
+\end_layout
+
+\end_inset
+
+ of this stochastic data generating process.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Probabilities and the Sample Space
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Random Phenomena, Outcomes and Probabilities 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The mutually exclusive potential results of a random process are called
+ the 
+\begin_inset Flex Emphasize
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+outcomes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The 
+\emph on
+
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+probability
+\end_layout
+
+\end_inset
+
+
+\emph default
+ of an outcome is the proportion of the time that the outcome occurs in
+ the long run.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The Sample Space and Random Event
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The set of all possible outcomes is called 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Emphasize
+status open
+
+\begin_layout Plain Layout
+the sample space
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+An 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Emphasize
+status open
+
+\begin_layout Plain Layout
+event
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ is a subset of the sample space, that is, an event is a set of one or more
+ outcomes.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Random Variables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Random Variables(R.V.)
+\end_layout
+
+\end_inset
+
+ A random variable (r.v.) is a function that maps from the sample space of
+ an experiment to the real line or 
+\begin_inset Formula $X:\Omega\shortrightarrow\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A random variable is a numerical summary of a random outcome.
+ They are numeric representation of uncertain events.(thus we can use math!)
+\end_layout
+
+\begin_layout Itemize
+Notation: R.V.s are usually denoted by upper case letters (e.g.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+), particular realizations are denoted by the corresponding lowercase letters
+ (e.g.
+ 
+\begin_inset Formula $x=3$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Example
+Tossing a coin 5 times 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+but not a random variable because it’s not numeric.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X(\omega)=$
+\end_inset
+
+ number of heads in the five tosses.
+ 
+\begin_inset Formula $X(HTHTT)=2$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Probability Distributions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Uncertainty over 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ uncertainty over value of .
+ We’ll use probability to formalize this uncertainty.
+\end_layout
+
+\begin_layout Itemize
+The probability distribution of a r.v.
+ gives the probability of all of the possible values of the r.v.
+\begin_inset Formula 
+\[
+\mathnormal{P_{X}(X=x)=P(\{\omega\in\Omega:X(\omega)=x\})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Tossing two coins: let 
+\begin_inset Formula $X$
+\end_inset
+
+ be the number of heads.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P(\{\omega\})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X(\omega)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P(X=x)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1/4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Distributional Functions of R.V.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It is cumbersome to derive the probabilities of X each time we need them,
+ so it is helpful to have a function that can give us the probability of
+ values or sets of values of X.
+ 
+\end_layout
+
+\begin_layout Definition
+The 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+cumulative distribution function
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+c.d.f
+\end_layout
+
+\end_inset
+
+ of a r.v.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+, denoted 
+\begin_inset Formula $F_{X}(x)$
+\end_inset
+
+, is defined by 
+\begin_inset Formula 
+\[
+\mathrm{\mathfrak{\mathnormal{F_{X}(x)\equiv P_{X}(X\leq x)}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The c.d.f tells us the probability of a r.v.
+ being less than some given value.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Distribution Functions of R.V.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We have two kinds of r.v.s
+\end_layout
+
+\begin_layout Definition
+A r.v.
+ 
+\begin_inset Formula $X,$
+\end_inset
+
+ is 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+discrete
+\end_layout
+
+\end_inset
+
+ if its range(the set of values it can take) is finite (
+\begin_inset Formula $\mathnormal{X\in\{x_{1},x_{2},...x_{k}\}}$
+\end_inset
+
+) or countably infinite
+\begin_inset Formula $\mathnormal{(X\in\{x_{1},x_{2},...\})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+eg: the number of computer crashes before deadline
+\end_layout
+
+\begin_layout Definition
+A r.v.
+ 
+\begin_inset Formula $X,$
+\end_inset
+
+ is 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+continuous
+\end_layout
+
+\end_inset
+
+ if it can contain all real numbers in a interval.
+ There are an uncountably infinite number of possible realizations.
+ 
+\end_layout
+
+\begin_layout Itemize
+eg: commuting times from home to school
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Probability Distribution of a 
+\size largest
+\emph on
+\color blue
+
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Discrete
+\end_layout
+
+\end_inset
+
+
+\size default
+\emph default
+\color inherit
+ R.V.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Probability mass function
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+Probability mass function (p.m.f.) describes the distribution of r.v.
+ when it is discrete:
+\begin_inset Formula 
+\[
+\mathnormal{f_{X}(x_{k})=P(X=x_{k})=p_{x},\:k=1,2,...,n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Fig_2_1.png
+	width 78page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Probability Distribution of a 
+\size largest
+\emph on
+\color blue
+
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Discrete
+\end_layout
+
+\end_inset
+
+
+\size default
+\emph default
+\color inherit
+ R.V.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+c.d.f of a discrete r.v
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+the c.d.f of a discrete r.v.
+ is denoted as 
+\begin_inset Formula 
+\[
+F_{X}(x)=P(X\leq x)=\sum_{X_{k}\leq x}f_{X}(x_{k})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Table2.1.png
+	width 85text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Probability Distribution of a 
+\emph on
+
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Continuous
+\end_layout
+
+\end_inset
+
+
+\emph default
+ R.V.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Probability density function
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The probability density function or p.d.f., for a continuous random variable
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ is the function that satisfies for any interval, B
+\begin_inset Formula 
+\[
+P(X\in B)=\int_{B}f_{X}(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Probability Distribution of a 
+\emph on
+
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+Continuous
+\end_layout
+
+\end_inset
+
+
+\emph default
+ R.V.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Specifically, for a subset of the real line(a, b): 
+\begin_inset Formula $P(a<X<b)=\intop_{a}^{b}f_{X}(x)dx$
+\end_inset
+
+, thus the probability of a region is the area under the p.d.f.
+ for that region.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Fig_2_2_2.png
+	width 75page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Probability Distribution of a 
+\emph on
+Continuous
+\emph default
+ R.V.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Cumulative probability distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+just as it is for a discrete random variable, except using p.d.f to calculate
+ the probability of x, 
+\begin_inset Formula 
+\[
+F(X)=P(X\leq x)=\int_{-\infty}^{x}f_{X}(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Fig_2_2_1.png
+	width 80page%
+	height 50pheight%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Expected Values, Mean, and Variance
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Properties of Distributions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Probability distributions describe the uncertainty about r.v.s.
+ The cdf/pmf/pdf give us all the information about the distribution of some
+ r.v., but we are quite often interested in some feature of the distribution
+ rather than the entire distribution.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What is the difference between these two density curves? How might we summarize
+ this difference? 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+There are two simple indictors: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Central tendency
+\end_layout
+
+\end_inset
+
+: where the center of the distribution is.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Mean/expectation (均值或期望）
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Spread
+\end_layout
+
+\end_inset
+
+: how spread out the distribution is around the center.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Variance/standard deviation（方差或标准差）
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Expected Value of a Random Variable
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The expected value of a random variable X, denoted 
+\begin_inset Formula $E(X)$
+\end_inset
+
+ or 
+\begin_inset Formula $\mu_{x}$
+\end_inset
+
+, is the long-run average value of the random variable over many repeated
+ trials or occurrences.
+ it is a natural measure of central tendency.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For a 
+\emph on
+discrete
+\emph default
+ r.v., 
+\begin_inset Formula $X\in\{x_{1},x_{2},...,x_{k}\}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathnormal{\mu_{X}=E[X]=\sum_{j=1}^{k}x_{j}p_{j}}
+\]
+
+\end_inset
+
+it is computed as a 
+\emph on
+weighted average
+\emph default
+ of the value of r.v., where the weights are the probability of each value
+ occurring.
+\end_layout
+
+\begin_layout Itemize
+For a 
+\emph on
+continuous
+\emph default
+ r.v., 
+\begin_inset Formula $X,$
+\end_inset
+
+ use the integral
+\begin_inset Formula 
+\[
+\mu_{X}=E[X]=\int_{-\infty}^{+\infty}xf_{X}(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Properties of Expectation
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Additivity
+\end_layout
+
+\end_inset
+
+: expectation of sums are sums of expectations
+\begin_inset Formula 
+\[
+E[X+Y]=E[X]+E[Y]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Homogeneity
+\end_layout
+
+\end_inset
+
+: Suppose that a and b are constants.
+ Then
+\begin_inset Formula 
+\[
+E[aX+b]=aE[X]+b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Law of the Unconscious Statistician
+\end_layout
+
+\end_inset
+
+, or LOTUS, if g(x) is a function of a discrete random variable, then
+\begin_inset Formula 
+\[
+E\left[g(X)\right]=\,\begin{cases}
+\sum_{x}g(x)f_{X}(x) & when\,x\,is\,discrete\\
+\intop g(x)f_{X}(x)dx & when\,x\,is\,continuous
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Variance of a Random Variable
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Besides some sense of where the middle of the distribution is, we also want
+ to know how spread out the distribution is around that middle.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+The
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+ Variance
+\end_layout
+
+\end_inset
+
+ of a random variable X, denoted 
+\begin_inset Formula $var(X)$
+\end_inset
+
+or 
+\begin_inset Formula $\sigma_{X}^{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{X}^{2}=Var(X)=E[(X-\mu_{X})^{2}]
+\]
+
+\end_inset
+
+The 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Standard Deviation
+\end_layout
+
+\end_inset
+
+ of X, denoted 
+\begin_inset Formula $\text{\sigma}_{X}$
+\end_inset
+
+, is just the square root of the variance.
+\begin_inset Formula 
+\[
+\sigma_{X}=\sqrt{Var(X)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Properties of Variance
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are constants, then we have the following properties:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $V(b)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $V(aX+b)=a^{2}V(X)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $V(X)=E[X^{2}]-(E[X])^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Bernoulli Distribution: 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Multiple Random Variables
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why multiple random variables?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We are going to want to know what the relationships are between variables.“The
+ objective of science is the discovery of the relations”—Lord Kelvin 
+\end_layout
+
+\begin_layout Itemize
+In most cases,we often want to explore the relationship between two variables
+ in one study.
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+eg.
+ Mortality and GDP growth
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Fig_out1.png
+	width 80page%
+	height 50theight%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Joint Probability Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Consider two 
+\emph on
+discrete
+\emph default
+ random variables 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ with a joint probability distribution, then the joint probability mass
+ function of 
+\begin_inset Formula $(X,Y)$
+\end_inset
+
+ describes the probability of any pair of values:
+\begin_inset Formula 
+\[
+f_{X,Y}(x,y)=P(X=x,Y=y)=p_{xy}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Table_2_2.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Marginal Probability Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The marginal distribution: often need to figure out the distribution of
+ just one of the r.v.s.
+\begin_inset Formula 
+\[
+f_{Y}(y)=P(Y=y)=\sum_{x}f_{X,Y}(x,y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Intuition: sum over the probability that 
+\begin_inset Formula $Y=y$
+\end_inset
+
+ for all possible values of 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Table_2_2.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Joint Probability Density Function
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Consider two 
+\emph on
+continuous
+\emph default
+ random variables 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ with a joint probability distribution, then the 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+joint probability density function
+\end_layout
+
+\end_inset
+
+ of 
+\begin_inset Formula $(X,Y)$
+\end_inset
+
+ is a function, denoted as 
+\begin_inset Formula $f_{X,Y}(x,y)$
+\end_inset
+
+ such that:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f_{X,Y}(x,y)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}f_{X,Y}(x,y)\,dxdy=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P(a<X<b,c<Y<d)=\int_{c}^{d}\int_{a}^{b}f_{X,Y}(x,y)\,dxdy$
+\end_inset
+
+, thus the probability in the 
+\begin_inset Formula $\{a,b,c,d\}$
+\end_inset
+
+area.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Joint Probability Density Function
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+
+\size large
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Jdensity1.png
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+\begin_inset Formula $Y$
+\end_inset
+
+ and 
+\begin_inset Formula $X$
+\end_inset
+
+ axes denote on the 
+\begin_inset Quotes eld
+\end_inset
+
+floor
+\begin_inset Quotes erd
+\end_inset
+
+, height is the value of 
+\begin_inset Formula $f_{XY}(x,y)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Joint Probability Density Function
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+The probability equals to volume above a specific region
+\begin_inset Formula 
+\[
+P(X,Y)\in A)=\int_{(x,y)\in A}f_{X,Y}(x,y)dxdy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Jdensity2.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Continuous Marginal Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the marginal p.d.f of 
+\begin_inset Formula $Y$
+\end_inset
+
+ by integrating over the distribution of 
+\begin_inset Formula $X$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f_{Y}(y)=\int_{-\infty}^{+\infty}f_{X,Y}(x,y)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+the marginal p.d.f of 
+\begin_inset Formula $X$
+\end_inset
+
+ by integrating over the distribution of 
+\begin_inset Formula $Y$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+f_{X}(x)=\int_{-\infty}^{+\infty}f_{X,Y}(x,y)dy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Continuous Marginal Distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Jdensity3.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Pile up all of the joint density onto a single dimension
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Joint Cumulative Distribution Function
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+joint cumulative distribution function
+\end_layout
+
+\end_inset
+
+ of 
+\begin_inset Formula $(X,Y)$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+F_{X,Y}(x,y)=P(X\leq x,Y\leq y)=\int_{-\infty}^{y}\int_{-\infty}^{x}f_{X,Y}(u,v)\,dudv
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Transform joint c.d.f and joint p.d.f
+\begin_inset Formula 
+\[
+f_{X,Y}(x,y)=\frac{\partial^{2}F_{X,Y}(x,y)}{\partial y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Properties of Joint Distributions
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Expectations over multiple r.v.s
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Expectations over multiple r.v.s
+\begin_inset Formula 
+\[
+E[g(X,Y)]=\begin{cases}
+\sum_{x}\sum_{y}g(x,y)f_{X,Y}(x,y) & if\\
+\int_{x}\int_{y}g(x,y)f_{X,Y}(x,y)dxdy & if
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Marginal expectation
+\begin_inset Formula 
+\[
+E[Y]=\begin{cases}
+\sum_{x}\sum_{y}yf_{X,Y}(x,y) & if\\
+\int_{x}\int_{y}yf(x,y)dxdy & if
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Independence
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+
+\color black
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Independence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+
+\color black
+Two r.v.s 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are 
+\emph on
+independent, which we denote it as 
+\begin_inset Formula $X\perp Y$
+\end_inset
+
+, if for all sets A and B 
+\begin_inset Formula 
+\[
+P(X\in A,Y\in B)=P(X\in A)P(Y\in B)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Intuition: knowing the value of 
+\begin_inset Formula $X$
+\end_inset
+
+ gives us no information about the value of 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+If
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are 
+\emph on
+independent
+\emph default
+, then 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\color black
+Joint p.d.f is the product of marginal p.d.f, thus 
+\begin_inset Formula $f_{X,Y}(x,y)=f_{X}(x)f_{Y}(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Joint c.d.f is the product of marginal c.d.f, thus 
+\begin_inset Formula $f_{X,Y}(x,y)=f_{X}(x)f_{Y}(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+functions of independent r.v.s are independent, thus
+\emph on
+ 
+\begin_inset Formula $h(X)\perp g(Y)$
+\end_inset
+
+ 
+\emph default
+for any functions 
+\begin_inset Formula $h(\cdot)$
+\end_inset
+
+ and 
+\begin_inset Formula $g(\cdot)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Independence
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+
+\size large
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Independence
+\end_layout
+
+\end_inset
+
+ if 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are independent r.v.s, then 
+\begin_inset Formula 
+\[
+E[XY]=E[X]E[Y]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Skip.
+ you could finish it by yourself.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Covariance
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+If two variables are not independent, we could still measure the strength
+ of their dependence by the definition of covariance.
+ 
+\end_layout
+
+\begin_layout Block
+
+\size large
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Covariance
+\end_layout
+
+\end_inset
+
+ the covariance between 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ is defined as 
+\begin_inset Formula 
+\[
+Cov[X,Y]=E\left[\left(X-E[X]\right)\left(Y-E[Y]\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Properties of covariances:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+\begin_inset Formula $Cov[X,Y]=E[XY]-E[X]E[Y]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $X\perp Y$
+\end_inset
+
+, 
+\begin_inset Formula $Cov[X,Y]=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Intuition of Covariance
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\noindent
+
+\size large
+The conditional probability mass function(conditional p.m.f) of 
+\begin_inset Formula $Y$
+\end_inset
+
+ conditional of 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\end_layout
+
+\begin_layout Columns
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Jdensity5.png
+	width 45page%
+	height 45page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Columns
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Jdensity6.png
+	width 45page%
+	height 45page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Columns
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Covariance and Independence
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+Properties of covariances:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+\begin_inset Formula $Cov[X,Y]=E[XY]-E[X]E[Y]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+\begin_inset Formula $Cov[aX+b,cY+d]=acCoV[XY]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+\begin_inset Formula $Cov[X,X]=Var[X]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size large
+Covariance and Independence
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+If 
+\begin_inset Formula $X\perp Y$
+\end_inset
+
+, then 
+\begin_inset Formula $Cov[X,Y]=0$
+\end_inset
+
+.
+ thus independence 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\family roman
+
+\begin_inset Formula $Cov[X,Y]=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+If 
+\begin_inset Formula $Cov[X,Y]=0$
+\end_inset
+
+, then 
+\begin_inset Formula $X\perp Y$
+\end_inset
+
+ ? 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+NO!
+\end_layout
+
+\end_inset
+
+ 
+\family roman
+
+\begin_inset Formula $Cov[X,Y]=0$
+\end_inset
+
+
+\family default
+ 
+\begin_inset Formula $\nRightarrow$
+\end_inset
+
+ independence.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Covariance and Correlation
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Covariance is not scale-free.
+ Correlation
+\family roman
+ is a special form of covariance after dividing out the scales of the respective
+ variables.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Correlation 
+\end_layout
+
+\end_inset
+
+ The correlation between 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ is defined as 
+\begin_inset Formula 
+\[
+\rho_{XY}=\frac{Cov[X,Y]}{\sqrt{Var[X]Var[Y]}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Correlation properties:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $-1\leq\rho\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $\mid\rho_{XY}\mid=1$
+\end_inset
+
+, then 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are perfectly correlated with a linear relationship: 
+\begin_inset Formula $Y=a+b\text{X}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conditional Distributions
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conditional Probability function
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+
+\size large
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\size large
+Conditional probability mass function
+\end_layout
+
+\end_inset
+
+The conditional probability mass functional(conditional p.m.f) of 
+\begin_inset Formula $Y$
+\end_inset
+
+ conditional of 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+f_{Y|X}\left(y|x\right)=P(Y=y\mid X=x)=\frac{P(X=x,Y=y)}{P(X=x)}=\dfrac{f_{X,Y}(x,y)}{f_{X}(x)}
+\]
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Table_2_3.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conditional Density Function
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Conditional probability density function:
+\end_layout
+
+\end_inset
+
+c.d.f.
+ of 
+\begin_inset Formula $Y$
+\end_inset
+
+ conditional on X is
+\end_layout
+
+\begin_layout Block
+\begin_inset Formula 
+\[
+f_{Y|X}\left(y|x\right)=\dfrac{f_{X,Y}(x,y)}{f_{X}(x)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Based on the definition of the conditional p.m.f./p.d.f., we have the following
+ equation
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{X,Y}(x,y)=f_{Y\mid X}\left(y|x\right)f_{X}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conditional Density Function
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Jdensity4.png
+	width 85page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\noindent
+c.d.f is proportional to joint p.d.f along 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ like a slice of total volume.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conditional Independence
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Conditional Independence
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are conditional Independent given 
+\begin_inset Formula $Z$
+\end_inset
+
+, denoted as 
+\begin_inset Formula $X\perp Y\mid Z$
+\end_inset
+
+, if 
+\begin_inset Formula 
+\[
+f_{X,Y|Z}\left(x,y|z\right)=f_{X\mid Z}\left(x|z\right)f_{Y\mid Z}\left(y|z\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are independent within levels of Z.
+ 
+\end_layout
+
+\begin_layout Itemize
+Example:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $X$
+\end_inset
+
+ = swimming accidents, 
+\begin_inset Formula $Y$
+\end_inset
+
+ = ice cream sold.
+\end_layout
+
+\begin_layout Itemize
+In general, two variable is highly correlated.
+ 
+\end_layout
+
+\begin_layout Itemize
+If conditional on 
+\begin_inset Formula $Z$
+\end_inset
+
+ = temperature, then they are independent.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conditional Expectation Function
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+
+\color black
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Conditional Expectation
+\end_layout
+
+\end_inset
+
+Conditional on X, Y's Conditional Expectation is 
+\end_layout
+
+\begin_layout Block
+
+\color black
+\begin_inset Formula $E(Y|X)=\begin{cases}
+\sum yf_{Y|X}(y|x) & discrete\,Y\\
+\int yf_{Y|X}(y|x)dy & continuous\,Y
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+
+\size normal
+\color black
+Conditional Expectation Function(CEF)
+\end_layout
+
+\end_inset
+
+ is a function of 
+\begin_inset Formula $x$
+\end_inset
+
+, since 
+\begin_inset Formula $X$
+\end_inset
+
+ is a random variable, so CEF is also a random variable.
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Intuition：期望就是求平均值，而条件期望就是“分组取平均” 或“在...条件下的均值”。
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Properties of Conditional Expectation 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $E[c(X)\mid X]=c(X)$
+\end_inset
+
+ for any function 
+\begin_inset Formula $c(X).$
+\end_inset
+
+Thus 
+\size large
+if we know 
+\begin_inset Formula $X,$
+\end_inset
+
+ then we also know 
+\begin_inset Formula $c(X)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+eg.
+ 
+\begin_inset Formula $E[(X^{2}+2X^{3})\mid X]=$
+\end_inset
+
+
+\begin_inset Formula $X^{2}+2X^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size large
+if 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are independent r.v.s, then 
+\begin_inset Formula 
+\[
+E[Y\mid X=x]=E[Y]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+if 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ independent conditional on 
+\begin_inset Formula $Z,$
+\end_inset
+
+ thus 
+\begin_inset Formula $X\perp Y\mid Z$
+\end_inset
+
+ ,
+\begin_inset Formula 
+\[
+E[Y\mid X=x,Z=z]=E[Y\mid Z=z]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conditional Variance
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+
+\size large
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Conditional Variance
+\end_layout
+
+\end_inset
+
+Conditional on X, Y's Conditional Expectation is defined as 
+\end_layout
+
+\begin_layout Block
+
+\size large
+\begin_inset Formula $Var(Y|X)=E\left[(Y-E[Y|X])^{2}\mid X\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Usual variance formula applied to conditional distribution.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Discrete 
+\begin_inset Formula 
+\[
+V[Y\mid X]=\sum_{y}(y-E[Y\mid X])^{2}f_{Y\mid X}\left(y|x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Continuous 
+\begin_inset Formula 
+\[
+V[Y\mid X]=\int_{y}(y-E[Y\mid X])^{2}f_{Y\mid X}\left(y|x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Several Famous Distributions
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Families of distributions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+There are several important families of distributions: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The p.m.f./p.d.f.
+ within the family has the same form, with parameters that might vary across
+ the family.
+ 
+\end_layout
+
+\begin_layout Itemize
+The parameters determine the shape of the distribution
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Statistical modeling in a nutshell: to study probability distribution function.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Assume the data, 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+, are independent draws from a common distribution 
+\begin_inset Formula $f_{\theta}(x)$
+\end_inset
+
+ within a family of distributions (normal, poisson, etc)
+\end_layout
+
+\begin_layout Itemize
+Use a function of the observed data to estimate the value of the 
+\begin_inset Formula $\theta:\hat{\theta}(X_{1},X_{2},...,X_{n})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Bernoulli Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+
+\size large
+\begin_inset Formula $X$
+\end_inset
+
+ has a Bernoulli distribution if it have a binary values 
+\begin_inset Formula $X\in\{0,1\}$
+\end_inset
+
+ and its probability mass function is 
+\begin_inset Formula 
+\[
+f_{X}(x)=P(X=x)=\,\begin{cases}
+p & if\,x=1\\
+1-p & if\,x=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Question:
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+What is the 
+\emph on
+Expectation and Variance
+\emph default
+ of 
+\begin_inset Formula $X$
+\end_inset
+
+?
+\begin_inset Formula 
+\begin{eqnarray*}
+E(X) & = & \sum_{j=1}^{k}x_{j}p_{j}=0\times(1-p)+1\times p=p
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Var(X)=E[X-E(X)]^{2}=E[X^{2}]-(E[X])^{2}=p-p^{2}=p(1-p)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Normal Distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The p.d.f of a normal random variable X is
+\begin_inset Formula 
+\[
+f_{X}(x)=\dfrac{1}{\sigma\sqrt{2\pi}}exp\left[-\frac{1}{2\sigma^{2}}(x-\mu)^{2}\right],\;-\infty<X<+\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+if X is normally distributed with expected value 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and variance 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+, denoted as 
+\begin_inset Formula $X\sim N(\mu,\sigma^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+if we know these two parameters, we know everything about the distribution.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Examples: Human heights, weights, test scores,
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $X$
+\end_inset
+
+ represents wage, income or consumption etc, it will has a log-normal distributi
+on, thus
+\begin_inset Formula 
+\[
+log(X)\sim N(\mu,\sigma^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Normal Distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Fig_2_5.png
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Standard Normal Distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A special case of the normal distribution where the mean is zero (
+\begin_inset Formula $\mu=0$
+\end_inset
+
+) and the variance is one (
+\begin_inset Formula $\sigma^{2}=\sigma=1$
+\end_inset
+
+), then its p.d.f is 
+\begin_inset Formula 
+\[
+f_{X}(x)=\phi(x)\text{=}\dfrac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}x^{2}},\;-\infty<X<+\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+if X is standard normally distributed, then denoted as 
+\begin_inset Formula $X\sim N(0,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The standard normal cumulative distribution function is denoted
+\begin_inset Formula 
+\[
+\Phi(z)=P(Z\leq z)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $z$
+\end_inset
+
+ is a standardize r.v.
+ thus 
+\begin_inset Formula $z=\frac{x-\mu_{X}}{\sigma_{X}}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Standard Normal Distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/W_fig_B8.png
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/Table_2_6.png
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Chi-Square Distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let 
+\begin_inset Formula $Z_{i}(i=1,2,...,m)$
+\end_inset
+
+ be independent random variables, each distributed as 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+standard normal
+\end_layout
+
+\end_inset
+
+.
+ Then a new random variable can be defined as the sum of the squares of
+ 
+\begin_inset Formula $Z_{i}$
+\end_inset
+
+ :
+\begin_inset Formula 
+\[
+X=\sum_{i=1}^{m}Z_{i}^{2}
+\]
+
+\end_inset
+
+Then 
+\begin_inset Formula $X$
+\end_inset
+
+ has a 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+chi-squared distribution
+\end_layout
+
+\end_inset
+
+ with 
+\emph on
+m 
+\emph default
+
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+degrees of freedom
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The form of the distribution varies with the number of degrees of freedom,
+ i.e.
+ the number of standard normal random variables 
+\begin_inset Formula $Z_{i}$
+\end_inset
+
+ included in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The distribution has a long tail, or is skewed, to the right.
+ As the degrees of freedom 
+\begin_inset Formula $m$
+\end_inset
+
+ gets larger, however, the distribution becomes more symmetric and ‘‘bell-shaped.
+’’ In fact, as 
+\begin_inset Formula $m$
+\end_inset
+
+ gets larger, the chi-square distribution converges to, and essentially
+ becomes, a 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+normal distribution
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Chi-Square Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/W_fig_B9.png
+	width 85page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Student 
+\emph on
+t
+\emph default
+ Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The Student 
+\emph on
+t
+\emph default
+ distribution can be obtained from a standard normal and a chi-square random
+ variable.
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $Z$
+\end_inset
+
+ have a standard normal distribution, let 
+\begin_inset Formula $X$
+\end_inset
+
+ have a chi-square distribution with 
+\emph on
+m
+\emph default
+ degrees of freedom and assume that 
+\begin_inset Formula $Z$
+\end_inset
+
+ and 
+\begin_inset Formula $X$
+\end_inset
+
+ are independent.
+ Then the random variable
+\begin_inset Formula 
+\[
+T=\frac{Z}{\sqrt{\nicefrac{X}{n}}}
+\]
+
+\end_inset
+
+has has a t-distribution with m degrees of freedom, denoted as 
+\begin_inset Formula $T\sim t_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The shape of the t-distribution is similar to that of a normal distribution,
+ except that the t-distribution has more probability mass in the tails.
+ 
+\end_layout
+
+\begin_layout Itemize
+As the degrees of freedom get large, the t-distribution approaches 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+the standard normal distribution
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Student 
+\emph on
+t
+\emph default
+ Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/W_fig_B10.png
+	width 85page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The 
+\emph on
+F
+\emph default
+ Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+Let 
+\begin_inset Formula $X_{1}\sim\chi_{m}^{2}$
+\end_inset
+
+and 
+\begin_inset Formula $X_{2}\sim\chi_{n}^{2}$
+\end_inset
+
+, and assume that 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ are independent, 
+\begin_inset Formula 
+\[
+Z=\frac{\frac{X_{1}}{m}}{\frac{X_{2}}{n}}\sim F_{m,n}
+\]
+
+\end_inset
+
+thus 
+\begin_inset Formula $Z$
+\end_inset
+
+ has an F-distribution with 
+\begin_inset Formula $(m,n)$
+\end_inset
+
+ degrees of freedom.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The 
+\emph on
+F 
+\emph default
+Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec1/W_fig_B11.png
+	width 85page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+In Summary
+\end_layout
+
+\end_body
+\end_document
