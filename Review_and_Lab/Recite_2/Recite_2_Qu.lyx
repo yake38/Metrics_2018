@@ -1,0 +1,3820 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usefonttheme[onlymath]{serif}
+\usepackage{fontspec}
+
+%\setmainfont{Times New Roman}
+%\setsansfont{Arial}
+%\setmonofont{Courier New}
+% 设定中文字体
+\usepackage{xeCJK}
+\usepackage{xcolor}
+\usetheme{Madrid}
+
+
+
+%\usebeamercolor[fg]{smokyblack}
+%\usebeamercolor[fg]{section in toc} 
+
+%\setbeamercolor{section in toc}{fg=black}
+
+%\defbeamertemplate*{section page}{default}[1][]
+%{
+%  \begingroup
+%    \centering
+%    {\usebeamerfont{section name}\usebeamercolor[fg]{section name}\sectionname~\insertsectionnumber}
+%    \vskip1em\par
+%    \begin{beamercolorbox}[sep=12pt,center,#1]{part title}
+%      \usebeamerfont{section title}\insertsection\par
+%    \end{beamercolorbox}
+%  \endgroup
+%}
+
+
+
+\AtBeginSection[]{
+ \begin{frame}
+   \vfill
+   \centering
+   \setbeamercolor{mycolor}{bg=white,fg=blue}
+   \begin{beamercolorbox}[sep=14pt,center,shadow=false,rounded=true]{mycolor}
+   \usebeamerfont{title}\insertsectionhead\par%
+   \end{beamercolorbox}
+   \vfill
+   \end{frame}
+}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 3
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "unicode=false"
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\branch Deleted
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Introduction to Econometrics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+
+\emph on
+Lecture 2 : Causal Inference and Random Control Trails(RCT)
+\end_layout
+
+\begin_layout Author
+
+\series bold
+Zhaopeng Qu
+\end_layout
+
+\begin_layout Institute
+
+\series bold
+Business School,Nanjing University
+\series default
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Nanjing University
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+Sep.
+ 18th, 2017
+\end_layout
+
+\begin_layout TitleGraphic
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/byelenin/Dropbox/Lyx/NJUlogo.png
+	lyxscale 50
+	width 10page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamersetuncovermixins{
+\backslash
+opaqueness<1->{10}}{
+\backslash
+opaqueness<1->{95}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outlines
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%[pausesections]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Section
+Population, Parameters and Random Sampling
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Population, Sample and i.i.d
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+\color black
+A 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\size large
+\color black
+population
+\end_layout
+
+\end_inset
+
+ is a collection of people, items, or events about which you want to make
+ inferences.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Population always have a probability distribution.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size large
+\emph on
+\color black
+A 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\size large
+\emph on
+\color black
+sample
+\end_layout
+
+\end_inset
+
+ 
+\emph default
+is a subset of population, which draw from population 
+\emph on
+in a certain way
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+\color black
+To represent the population well, a sample should be randomly collected
+ and adequately large.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Infinite population
+\end_layout
+
+\begin_layout Itemize
+Finite population
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+With replacement 
+\end_layout
+
+\begin_layout Itemize
+Without replacement: when the population size 
+\begin_inset Formula $N$
+\end_inset
+
+ is very large, compared with the sample size 
+\begin_inset Formula $n,$
+\end_inset
+
+ then we could say that they are 
+\emph on
+nearly independent.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Random Sample and i.i.d
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+
+\size large
+\color black
+The r.v.s are called 
+\emph on
+a 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\size large
+\emph on
+\color black
+random sample
+\end_layout
+
+\end_inset
+
+ of size n from the population
+\emph default
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ if 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ are mutually independent and have the same p.d.f/p.m.f 
+\begin_inset Formula $f(x).$
+\end_inset
+
+ Alternatively, 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ are called 
+\emph on
+
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\size large
+\emph on
+\color black
+independent, and identically distributed 
+\end_layout
+
+\end_inset
+
+random variable with p.d.f/p.m.f , commonly abbreviated to i.i.d.
+ r.v.s.
+ 
+\end_layout
+
+\begin_layout Itemize
+eg.
+ Random sample of n respondents on a survey question.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X_{i}\perp X_{j}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f_{X_{i}}(x)$
+\end_inset
+
+ is the same for all 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+And the joint p.d.f/p.m.f of 
+\size large
+\color black
+
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+f(x_{1},...,x_{n})=f(x_{1})...f(x_{n})=\prod_{i=1}^{n}f(x_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Statistic and Sampling Distribution 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+
+\size large
+\color black
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ is a
+\emph on
+ 
+\size default
+\color inherit
+random sample
+\size large
+\color black
+ 
+\emph default
+of size n from the population 
+\begin_inset Formula $f(x).$
+\end_inset
+
+ A 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+statistic
+\end_layout
+
+\end_inset
+
+
+\emph on
+ 
+\emph default
+is a real-valued or vector-valued function fully depended on
+\emph on
+ 
+\emph default
+
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+, thus 
+\begin_inset Formula 
+\[
+T=T(X_{1},...,X_{n})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+and the probability distribution of a statistic 
+\begin_inset Formula $T$
+\end_inset
+
+ is called the 
+\emph on
+
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+sampling distribution
+\end_layout
+
+\end_inset
+
+
+\emph default
+ of 
+\begin_inset Formula $T.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A statistic is only a function of the sample.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sample Mean and Sample Variance
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+The 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+sample average
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+sample mean
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+, of the 
+\begin_inset Formula $n$
+\end_inset
+
+ observation 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+\bar{X}=\frac{1}{n}(X_{1}+X_{2}+...+X_{n})=\frac{1}{n}\sum_{i=1}^{n}X_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+sample variance
+\end_layout
+
+\end_inset
+
+ is the statistic defined by 
+\begin_inset Formula 
+\[
+S^{2}=\frac{1}{n-1}\sum_{i=1}^{n}(X_{i}-\overline{X})^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+if 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ is a r.v., then 
+\begin_inset Formula $\sum X_{i}$
+\end_inset
+
+ is also a r.v.
+\end_layout
+
+\begin_layout Itemize
+the sample mean and the sample variance are also a function of sums, so
+ they are a r.v.
+ too.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+we could assume that the sample mean has some certain probability functions
+ to describe its distributions.
+\end_layout
+
+\begin_layout Itemize
+what is the expectation, variance or p.d.f./c.d.f.
+ of this distribution? 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+A simple case of sample mean
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let 
+\begin_inset Formula $\{X_{1},X_{n}\}\in[1,100]$
+\end_inset
+
+ , assume 
+\begin_inset Formula $n=2$
+\end_inset
+
+, thus only 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+and 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec2/fig4.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Large-Sample Approximations to Sampling Distributions
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sampling Distributions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+There are two approaches to characterizing sampling distributions:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+exact/finite 
+\emph default
+sample distribution: The sampling distribution that exactly describes the
+ distribution of 
+\begin_inset Formula $X$
+\end_inset
+
+ for any 
+\begin_inset Formula $n$
+\end_inset
+
+ is called the exact/finite sample distribution of 
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+approximate/asymptotic
+\emph default
+ distribution: when the sample size 
+\begin_inset Formula $n$
+\end_inset
+
+ is large, the sample distribution approximates to a certain distribution
+ function.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Two key tools used to approximate sampling distributions when the sample
+ size is large, assume that 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Law of Large Numbers
+\end_layout
+
+\end_inset
+
+(L.L.N.): when the sample size is large, 
+\begin_inset Formula $\overline{X}$
+\end_inset
+
+ will be close to 
+\begin_inset Formula $\mu_{Y}$
+\end_inset
+
+ , the population mean with very high probability.
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Central Limit Theorem
+\end_layout
+
+\end_inset
+
+(C.L.T.): when the sample size is large, the sampling distribution of the standardi
+zed sample average,
+\begin_inset Formula $\nicefrac{(\overline{Y}-\mu_{Y})}{\sigma_{\overline{Y}}}$
+\end_inset
+
+ , is approximately normal.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence in probability
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Let 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ be an random variables or sequence, is said to converge in probability
+ to a value 
+\begin_inset Formula $b$
+\end_inset
+
+ if for every 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 
+\size large
+
+\begin_inset Formula 
+\[
+P(\mid X_{n}-b\mid>\varepsilon)\rightarrow0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+ We write this 
+\begin_inset Formula $X_{n}\xrightarrow{p}b$
+\end_inset
+
+ or 
+\begin_inset Formula $plim(X_{n})=b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+it is similar to the concept of a limitation in a probability way.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+the Law of Large Numbers
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+Let 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ be an i.i.d draws from a distribution with mean 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and finite variance 
+\size large
+
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+(a population) and 
+\begin_inset Formula $\overline{X}=\frac{1}{n}\sum_{i=1}^{n}X_{i}$
+\end_inset
+
+ is the sample mean, then 
+\begin_inset Formula 
+\[
+\overline{X}\xrightarrow{p}\mu
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Intuition: the distribution of 
+\begin_inset Formula $\overline{X}_{n}$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+collapses
+\begin_inset Quotes erd
+\end_inset
+
+ on 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+A simple case
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Example
+Suppose 
+\size large
+
+\begin_inset Formula $X$
+\end_inset
+
+ has a Bernoulli distribution if it have a binary values 
+\begin_inset Formula $X\in\{0,1\}$
+\end_inset
+
+ and its probability mass function is 
+\begin_inset Formula 
+\[
+P(X=x)=\,\begin{cases}
+0.78 & if\:x=1\\
+0.22 & if\:x=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+then 
+\begin_inset Formula $E(X)=p=0.78$
+\end_inset
+
+ and 
+\begin_inset Formula $Var(X)=p(1-p)=0.1716$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout PlainFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence in Distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec2/fig1.png
+	width 80page%
+	height 70pheight%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence in Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Let 
+\begin_inset Formula $X_{1},X_{2,}...$
+\end_inset
+
+ be
+\size large
+ a sequence of r.v.s, and for 
+\begin_inset Formula $n=1,2,...$
+\end_inset
+
+let 
+\begin_inset Formula $F_{n}(x)$
+\end_inset
+
+ be the c.d.f of 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+.
+ Then it is said that 
+\begin_inset Formula $X_{1},X_{2},...$
+\end_inset
+
+converges in distribution to r.v.
+ 
+\begin_inset Formula $W$
+\end_inset
+
+ with c.d.f, 
+\begin_inset Formula $F_{W}$
+\end_inset
+
+ if 
+\begin_inset Formula 
+\[
+\underset{n\shortrightarrow\infty}{lim}F_{n}(x)=F_{W}(x)
+\]
+
+\end_inset
+
+which we write as 
+\begin_inset Formula $X_{n}\xrightarrow{d}W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Basically: when 
+\begin_inset Formula $n$
+\end_inset
+
+ is big, the distribution of 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ is very similar to the distribution of w.
+ 
+\end_layout
+
+\begin_layout Itemize
+Common to standardize a r.v.
+ by subtracting its expectation and dividing by its standard deviation
+\begin_inset Formula 
+\[
+Z=\frac{X-E[X]}{\sqrt{Var[X]}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Central Limit Theorem
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+Let 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ be an i.i.d draws from a distribution with sample size 
+\begin_inset Formula $n$
+\end_inset
+
+with mean 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and 
+\size large
+
+\begin_inset Formula $0<\sigma^{2}<\infty$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\frac{\overline{X}_{n}-\mu}{\nicefrac{\sigma}{\sqrt{n}}}\xrightarrow{d}N(0,1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Because we don't have to make specific assumption about the distribution
+ of 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+, so whatever the distribution of 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+, when 
+\begin_inset Formula $n$
+\end_inset
+
+ is big, 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the standardized 
+\begin_inset Formula $\overline{X}_{n}\sim N(0,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\overline{X}_{n}\sim N(\mu,\frac{\sigma^{2}}{n})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Central Limit Theorem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec2/fig2.png
+	width 80page%
+	height 80pheight%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+How large is 
+\begin_inset Quotes eld
+\end_inset
+
+large enough
+\begin_inset Quotes erd
+\end_inset
+
+ ? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How large is large enough ?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+how large must 
+\begin_inset Formula $n$
+\end_inset
+
+ be for the distribution of 
+\begin_inset Formula $\overline{Y}$
+\end_inset
+
+ to be approximately normal?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The answer: it depends.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+if 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ are themselves normally distributed, then 
+\begin_inset Formula $\overline{Y}$
+\end_inset
+
+ is exactly normally distributed for all n.
+\end_layout
+
+\begin_layout Itemize
+if 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ themselves have a distribution that is far from normal, then this approximation
+ can require 
+\begin_inset Formula $n=30$
+\end_inset
+
+ or even more.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+How large is 
+\begin_inset Quotes eld
+\end_inset
+
+large enough
+\begin_inset Quotes erd
+\end_inset
+
+ ? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec2/fig3.png
+	width 80page%
+	height 80pheight%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Statistical Inference: Estimation, Confident Intervals and Testing 
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Statistical Inference
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Inference
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What is our best guess about some quantity of interest? 
+\end_layout
+
+\begin_layout Itemize
+What are a set of plausible values of the quantity of interest?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Compare estimators, such as 
+\series default
+in an experiment
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+we use simple difference in sample means?
+\end_layout
+
+\begin_layout Itemize
+or the post-stratification estimator, where we estimate the estimate the
+ difference among two subsets of the data (male and female, for instance)
+ and then take the weighted average of the two variable
+\end_layout
+
+\begin_layout Itemize
+which is better? how could we know?
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Inference: from Samples to Population
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Our focus: 
+\begin_inset Formula $\{Y_{1},Y_{2},...,Y_{n}\}$
+\end_inset
+
+ are i.i.d.
+ draws from 
+\begin_inset Formula $f(y)$
+\end_inset
+
+ or 
+\begin_inset Formula $F(Y)$
+\end_inset
+
+, thus population distribution.
+ 
+\end_layout
+
+\begin_layout Itemize
+Statistical inference or learning is using samples to infer 
+\begin_inset Formula $f(y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+two ways 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Parametric 
+\end_layout
+
+\begin_layout Itemize
+Non-parametric 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Point estimation
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Point estimation: providing a single “best guess” as to the value of some
+ fixed, unknown quantity of interest, 
+\begin_inset Formula $\theta$
+\end_inset
+
+, which is is a feature of the population distribution, 
+\begin_inset Formula $f(y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Examples
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mu=E[Y]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sigma^{2}=Var[Y]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mu_{y}-\mu_{x}=E[Y]-E[X]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Estimator and Estimate
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Given a random sample
+\begin_inset Formula $\{Y_{1},Y_{2},...,Y_{n}\}$
+\end_inset
+
+ drawn from a population distribution that depends on an unknown parameter
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+, and an 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+estimator
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\hat{\theta}$
+\end_inset
+
+ is a function of the sample: thus 
+\begin_inset Formula $\hat{\theta}_{n}=h(Y_{1},Y_{2},...,Y_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+An estimator is a r.v.
+ because it is a function of r.v.s.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\{\hat{\theta}_{1},\hat{\theta}_{2},...,\hat{\theta}_{n}\}$
+\end_inset
+
+ is a sequence of r.v.s, so it has convergence in probability/distribution.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\color blue
+Question: what is the difference between an estimator and an statistic?
+\end_layout
+
+\begin_layout Definition
+An 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+estimate
+\end_layout
+
+\end_inset
+
+ is the numerical value of the estimator when it is actually computed using
+ data from a specific sample.
+ Thus if we have the actual data 
+\begin_inset Formula $\{y_{1},y_{2},...,y_{n}\}$
+\end_inset
+
+,then 
+\begin_inset Formula $\hat{\theta}=h(y_{1},y_{2},...,y_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+True or False and Why? “My estimate was the sample mean and my estimator
+ was 0.5”?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Three Characteristics of an Estimator
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+let 
+\begin_inset Formula $\hat{}_{Y}$
+\end_inset
+
+ denote some estimator of 
+\begin_inset Formula $\mu_{Y}$
+\end_inset
+
+ and 
+\begin_inset Formula $E(\hat{\mu}_{Y})$
+\end_inset
+
+ is the mean of the sampling distribution of 
+\begin_inset Formula $\hat{\mu}_{Y}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Unbiasedness:
+\end_layout
+
+\end_inset
+
+ the estimator of 
+\begin_inset Formula $\mu_{Y}$
+\end_inset
+
+ is 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+unbiased
+\end_layout
+
+\end_inset
+
+ if 
+\begin_inset Formula 
+\[
+E(\hat{\mu}_{Y})=\mu_{Y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Consistency:
+\end_layout
+
+\end_inset
+
+the estimator of 
+\begin_inset Formula $\mu_{Y}$
+\end_inset
+
+ is 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+consistent
+\end_layout
+
+\end_inset
+
+ if 
+\begin_inset Formula 
+\[
+\hat{\mu}_{Y}\xrightarrow{p}\mu_{Y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+Efficiency:
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $\tilde{\mu}_{Y}$
+\end_inset
+
+ be another estimator of 
+\begin_inset Formula $\mu_{Y}$
+\end_inset
+
+ and suppose that both 
+\begin_inset Formula $\tilde{\mu}_{Y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\mu}_{Y}$
+\end_inset
+
+ are unbiased.Then 
+\begin_inset Formula $\hat{\mu}_{Y}$
+\end_inset
+
+ is said to be more 
+\emph on
+
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+efficient
+\end_layout
+
+\end_inset
+
+ 
+\emph default
+than 
+\begin_inset Formula $\hat{\mu}_{Y}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+var(\hat{\mu}_{Y})<var(\tilde{\mu}_{Y})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Comparing variances is difficult if we do not restrict our attention to
+ unbiased estimators because we could always use a trivial estimator with
+ variance zero that is biased.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Properties of the sample mean
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\mu_{Y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{Y}^{2}$
+\end_inset
+
+ denote the mean and variance of 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+E(\overline{Y})=\frac{1}{n}\sum_{i=1}^{n}E(Y_{i})=\mu_{Y}
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $\overline{Y}$
+\end_inset
+
+ is an 
+\emph on
+unbiased
+\emph default
+ estimator of 
+\begin_inset Formula $\mu_{Y}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Based on the L.L.N., 
+\begin_inset Formula $\overline{Y}\xrightarrow{p}\mu_{Y}$
+\end_inset
+
+, so 
+\begin_inset Formula $\overline{Y}$
+\end_inset
+
+ is also 
+\emph on
+consistent
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+the variance of sample mean
+\begin_inset Formula 
+\[
+Var(\overline{Y})=var\left(\frac{1}{n}\sum_{i=1}^{n}Y_{i}\right)=\frac{1}{n^{2}}\sum_{i=1}^{n}Var(Y_{i})=\frac{\sigma_{Y}^{2}}{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+the standard deviation of the sample mean is 
+\begin_inset Formula $\sigma_{\overline{Y}}=\frac{\sigma_{Y}}{\sqrt{n}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Properties of the sample mean
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Because efficiency entails a comparison of estimators, we need to specify
+ the estimator or estimators to which Y is to be compared.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let 
+\begin_inset Formula $\widetilde{Y}=\frac{1}{n}\left(\frac{1}{2}Y_{1}+\frac{3}{2}Y_{2}+\frac{1}{2}Y_{3}+\frac{3}{2}Y_{4}+...+\frac{1}{2}Y_{n-1}+\frac{3}{2}Y_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $Var(\widetilde{Y})=1.25\frac{\sigma_{Y}^{2}}{n}>\frac{\sigma_{Y}^{2}}{n}=Var(\overline{Y})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Thus 
+\begin_inset Formula $\overline{Y}$
+\end_inset
+
+ is more efficient than 
+\begin_inset Formula $\widetilde{Y}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Properties of the Sample Variance
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let 
+\begin_inset Formula $\mu_{Y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{Y}^{2}$
+\end_inset
+
+ denote the mean and variance of 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ , then the sample variance： 
+\begin_inset Formula $S_{Y}^{2}=\frac{1}{n-1}\sum_{i=1}^{n}(Y_{i}-\overline{Y})^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E(S_{Y}^{2})=\sigma_{Y}^{2}$
+\end_inset
+
+, thus 
+\begin_inset Formula $S^{2}$
+\end_inset
+
+ is an 
+\emph on
+unbiased
+\emph default
+ estimator of 
+\begin_inset Formula $\sigma_{Y}^{2}$
+\end_inset
+
+.
+ It is also the reason why the average uses the divisor 
+\begin_inset Formula $n-1$
+\end_inset
+
+ instead of 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{Y}^{2}\xrightarrow{P}\sigma_{Y}^{2}$
+\end_inset
+
+, thus the sample variance is a consistent estimator of the population variance.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Because 
+\begin_inset Formula $\sigma_{\overline{Y}}=\frac{\sigma_{Y}}{\sqrt{n}}$
+\end_inset
+
+, so the statement above justifies using 
+\begin_inset Formula $\frac{S_{Y}}{\sqrt{n}}$
+\end_inset
+
+ as an estimator of the standard deviation of the sample mean, 
+\begin_inset Formula $\sigma_{\overline{Y}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+It is called 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+the standard error
+\end_layout
+
+\end_inset
+
+ of the sample mean and it dented 
+\begin_inset Formula $SE[\overline{Y}]$
+\end_inset
+
+ or 
+\begin_inset Formula $\hat{\sigma}_{\overline{Y}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Interval Estimation and Confidence Intervals
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interval Estimation
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A point estimate provides no information about how close the estimate is
+ 
+\begin_inset Quotes eld
+\end_inset
+
+likely
+\begin_inset Quotes erd
+\end_inset
+
+ to be to the population parameter.
+ 
+\end_layout
+
+\begin_layout Itemize
+We cannot know how close an estimate for a particular sample is to the populatio
+n parameter because the population is unknown.
+\end_layout
+
+\begin_layout Itemize
+A different (complementary) approach to estimation is to produce 
+\emph on
+
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+a range of values
+\end_layout
+
+\end_inset
+
+
+\emph default
+ that will contain the truth with some fixed probability.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+What is a Confidence Interval?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+A 
+\begin_inset Formula $100(1-\text{\alpha})\%$
+\end_inset
+
+ confidence interval for a population parameter 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is an interval 
+\begin_inset Formula $C_{n}=(a,b)$
+\end_inset
+
+ , where 
+\begin_inset Formula $a=a(Y_{1},...,Y_{n})$
+\end_inset
+
+ and 
+\begin_inset Formula $b=b(Y_{1},...,Y_{n})$
+\end_inset
+
+ are functions of the data such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(a<\theta<b)=1-\alpha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+In general, this confidence level is 
+\begin_inset Formula $1-\alpha$
+\end_inset
+
+ ; where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is called 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+significance level
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interval Estimation and Condence Intervals
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Suppose the population has a normal distribution 
+\begin_inset Formula $N(\mu,\sigma^{2})$
+\end_inset
+
+ and let 
+\begin_inset Formula $Y_{1},Y_{2},...,Y_{n}$
+\end_inset
+
+ be a random sample from the population.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Then the sample mean has a normal distribution: 
+\begin_inset Formula $\overline{Y}\sim N(\mu,\frac{\sigma^{2}}{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The standardized sample mean 
+\begin_inset Formula $\overline{Z}$
+\end_inset
+
+ is given by: 
+\begin_inset Formula $\overline{Z}=\frac{\overline{Y}-\mu}{\nicefrac{\sigma}{\sqrt{n}}}\sim N(0,1)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Then 
+\begin_inset Formula $\theta=\overline{Z}$
+\end_inset
+
+, then 
+\begin_inset Formula $P(a<\theta<b)=1-\alpha$
+\end_inset
+
+ turns into 
+\begin_inset Formula 
+\[
+a<\frac{\overline{Y}-\mu}{\nicefrac{\sigma}{\sqrt{n}}}<b
+\]
+
+\end_inset
+
+then it follows that 
+\begin_inset Formula 
+\[
+P(\overline{Y}-a\nicefrac{\sigma}{\sqrt{n}}<\mu<\overline{Y}+b\nicefrac{\sigma}{\sqrt{n}})=1-\alpha
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The random interval contains the population mean with a probability 
+\begin_inset Formula $1-\alpha$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interval Estimation and Condence Intervals
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Two cases: 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is known and unknown
+\end_layout
+
+\begin_layout Itemize
+When 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is known, for example,
+\begin_inset Formula $\sigma=1,$
+\end_inset
+
+ thus 
+\begin_inset Formula $Y\sim N(\mu,1)$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Itemize
+then 
+\begin_inset Formula $\overline{Y}\sim N(\mu,\frac{\sigma^{2}}{n}=\frac{1}{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+From this, we can standardize 
+\begin_inset Formula $\overline{Y}$
+\end_inset
+
+, and, because the standardized version of 
+\begin_inset Formula $\overline{Y}$
+\end_inset
+
+ has a standard normal distribution, and we let 
+\begin_inset Formula $\alpha=0.05$
+\end_inset
+
+, then we have 
+\begin_inset Formula 
+\[
+P(-1.96<\frac{\overline{Y}-\mu}{\nicefrac{1}{\sqrt{n}}}<1.96)=1-0.05
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The event in parentheses is identical to the event 
+\begin_inset Formula $\overline{Y}-1.96\nicefrac{}{\sqrt{n}}\leq\mu\leq\overline{Y}+1.96\nicefrac{}{\sqrt{n}}$
+\end_inset
+
+, so 
+\begin_inset Formula 
+\[
+P(\overline{Y}-1.96\nicefrac{}{\sqrt{n}}\leq\mu\leq\overline{Y}+1.96\nicefrac{}{\sqrt{n}})=0.95
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The interval estimate of 
+\begin_inset Formula $\mu$
+\end_inset
+
+ may be written as 
+\begin_inset Formula $[\overline{Y}-1.96\nicefrac{}{\sqrt{n}},\overline{Y}+1.96\nicefrac{}{\sqrt{n}}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interval Estimation and Condence Intervals
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+When 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is unknown, we must use an estimate 
+\begin_inset Formula $S$
+\end_inset
+
+ , denote the sample standard deviation, replacing unknown 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+P(\overline{Y}-1.96\nicefrac{S}{\sqrt{n}}\leq\mu\leq\overline{Y}+1.96\nicefrac{S}{\sqrt{n}})=0.95
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This could not work because 
+\begin_inset Formula $S$
+\end_inset
+
+ is not a constant but a r.v.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interval Estimation and Condence Intervals
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+The 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+t-statistic
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+t-ratio
+\end_layout
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\frac{\overline{Y}-\mu}{SE(\overline{Y})}\sim t_{n-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+To construct a 95% confidence interval, let 
+\begin_inset Formula $c$
+\end_inset
+
+ denote the 
+\begin_inset Formula $97.5^{th}$
+\end_inset
+
+ percentile in the 
+\begin_inset Formula $t_{n-1}$
+\end_inset
+
+ distribution.
+\begin_inset Formula 
+\[
+P(-c<t\leq c)=0.95
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $c_{\nicefrac{\alpha}{2}}$
+\end_inset
+
+ is the critical value of the 
+\emph on
+t
+\emph default
+ distribution.
+\end_layout
+
+\begin_layout Itemize
+The condence interval may be written as 
+\begin_inset Formula $[\overline{Y}\pm c_{\nicefrac{\alpha}{2}}\nicefrac{S}{\sqrt{n}}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interval Estimation and Condence Intervals
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+
+\size large
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec2/fig5.png
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+A simple rule of thumb for a 95% confidence interval
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Caution! An often recited, but incorrect interpretation of a confidence
+ interval is the following:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+“I calculated a 95% confidence interval of [0.05,0.13], which means that there
+ is a 95% chance that the true means is in that interval.” 
+\end_layout
+
+\begin_layout Itemize
+This is WRONG.
+ actually 
+\begin_inset Formula $\mu$
+\end_inset
+
+ either is or is not in the interval.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The probabilistic interpretation comes from the fact that for 95% of all
+ random samples, the constructed confidence interval will contain 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interpreting the confidence interval
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Caution! An often recited, but incorrect interpretation of a confidence
+ interval is the following:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+“I calculated a 95% confidence interval of [0.05,0.13], which means that there
+ is a 95% chance that the true means is in that interval.” 
+\end_layout
+
+\begin_layout Itemize
+This is WRONG.
+ actually 
+\begin_inset Formula $\mu$
+\end_inset
+
+ either is or is not in the interval.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The probabilistic interpretation comes from the fact that for 95% of all
+ random samples, the constructed confidence interval will contain 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Hypothesis Testing
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Hypothesis Testing
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+A hypothesis is a statement about a population parameter, thus 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ Formally, we want to test whether is significantly different from a certain
+ value 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H_{0}:\theta=\mu_{0}
+\]
+
+\end_inset
+
+which is called 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+null hypothesis
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+The alternative hypothesis
+\end_layout
+
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+H_{1}:\theta\neq\mu_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If the value 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+ does not lie within the calculated condence interval, then we 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+reject
+\end_layout
+
+\end_inset
+
+ the null hypothesis.
+\end_layout
+
+\begin_layout Itemize
+If the value 
+\begin_inset Formula $\mu_{0}$
+\end_inset
+
+ lie within the calculated condence interval, then we 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+fail to reject
+\end_layout
+
+\end_inset
+
+ the null hypothesis.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+General framework
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A hypothesis test chooses whether or not to reject the null hypothesis based
+ on the data we observe.
+ 
+\end_layout
+
+\begin_layout Itemize
+Rejection based on a test statistic
+\begin_inset Formula 
+\[
+T_{n}=T(Y_{1},...,Y_{n})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The null/reference distribution is the distribution of 
+\begin_inset Formula $T$
+\end_inset
+
+ under the null.
+ 
+\end_layout
+
+\begin_layout Itemize
+We’ll write its probabilities as 
+\begin_inset Formula $P_{0}(T_{n}\leq t)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Two Type Errors
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In both cases, there is a certain risk that our conclusion is wrong
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Type I Error
+\end_layout
+
+\end_inset
+
+A Type I error is when we reject the null hypothesis when it is in fact
+ true.(
+\begin_inset Quotes eld
+\end_inset
+
+left-wing
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+We say that the Lady is discerning when she is just guessing(null hypo:
+ she is just guessing)
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Type II Error
+\end_layout
+
+\end_inset
+
+A Type II error is when we fail to reject the null hypothesis when it is
+ false.(
+\begin_inset Quotes eld
+\end_inset
+
+right-wing
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+General framework
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A hypothesis test chooses whether or not to reject the null hypothesis based
+ on the data we observe.
+ 
+\end_layout
+
+\begin_layout Itemize
+Rejection based on a test statistic
+\begin_inset Formula 
+\[
+T_{n}=T(Y_{1},...,Y_{n})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The null/reference distribution is the distribution of 
+\begin_inset Formula $T$
+\end_inset
+
+ under the null.
+ 
+\end_layout
+
+\begin_layout Itemize
+We’ll write its probabilities as 
+\begin_inset Formula $P_{0}(T_{n}\leq t)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+P-Value
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+To provide additional information, we could ask the question: What is the
+ largest significance level at which we could carry out the test and still
+ fail to reject the null hypothesis?
+\end_layout
+
+\begin_layout Itemize
+We can consider the
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+ p-value 
+\end_layout
+
+\end_inset
+
+of a test
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate the t-statistic t
+\end_layout
+
+\begin_layout Enumerate
+The largest significance level at which we would fail to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ is the significance level associated with using t as our critical value
+\begin_inset Formula 
+\[
+p-value=1-\Phi(t)
+\]
+
+\end_inset
+
+where denotes the standard normal c.d.f.(we assume that 
+\begin_inset Formula $n$
+\end_inset
+
+ is large enough)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+P-Value
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Suppose that 
+\begin_inset Formula $t=1.52$
+\end_inset
+
+, then we can find the largest significance level at which we would fail
+ to reject 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p-value=P(T>1.52\mid H_{0})=1-\Phi(1.52)=0.065
+\]
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../../../2017Fall/Econometrics/LeCSlides/Lec2/fig6.png
+	width 70page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Comparing Means from Different Populations
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+An Example: Comparing Means from Different Populations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Do recent male and female college graduates earn the same amount on average?
+ This question involves comparing the means of two different population
+ distributions.
+ 
+\end_layout
+
+\begin_layout Itemize
+In an RCT, we would like to estimate the average causal effects over the
+ population
+\begin_inset Formula 
+\[
+ATE=ATT=E\{Y_{i}(1)-Y_{i}(0)\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We only have random samples and random assignment to treatment, then what
+ we can estimate instead
+\begin_inset Formula 
+\[
+difference\:in\:mean=\overline{Y}_{treated}-\overline{Y}_{control}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Under randomization, 
+\emph on
+difference-in-means
+\emph default
+ is a good estimate for the ATE.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Hypothesis Tests for the Difference Between Two Means
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+To illustrate a test for the difference between two means, let mw be the
+ mean hourly earning in the population of women recently graduated from
+ college and let mm be the population mean for recently graduated men.
+\end_layout
+
+\begin_layout Itemize
+Then the 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+null hypothesis
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex Bold
+status open
+
+\begin_layout Plain Layout
+the two-sided alternative hypothesis
+\end_layout
+
+\end_inset
+
+ are 
+\begin_inset Formula 
+\begin{eqnarray*}
+H_{0}:\mu_{m} & = & \mu_{w}\\
+H_{1}:\mu_{m} & \neq & \mu_{w}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Consider the null hypothesis that mean earnings for these two populations
+ differ by a certain amount, say 
+\begin_inset Formula $d_{0}$
+\end_inset
+
+.
+ The null hypothesis that men and women in these populations have the same
+ mean earnings corresponds to 
+\begin_inset Formula $H_{0}:$
+\end_inset
+
+ 
+\begin_inset Formula $H_{0}:d_{0}=\mu_{m}-\mu_{w}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Difference Between Two Means
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Suppose we have samples of 
+\begin_inset Formula $n_{m}$
+\end_inset
+
+ men and 
+\begin_inset Formula $n_{w}$
+\end_inset
+
+ women drawn at random from their populations.
+ Let the sample average annual earnings be 
+\begin_inset Formula $\overline{Y}_{m}$
+\end_inset
+
+ for men and 
+\begin_inset Formula $\overline{Y}_{w}$
+\end_inset
+
+ for women.
+ Then an estimator of 
+\begin_inset Formula $\mu_{m}-\mu_{w}$
+\end_inset
+
+ is 
+\begin_inset Formula $\overline{Y}_{m}-\overline{Y}_{w}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+Let us discuss the distribution of 
+\begin_inset Formula $\overline{Y}_{m}-\overline{Y}_{w}$
+\end_inset
+
+ .
+\begin_inset Formula 
+\[
+\sim N(\mu_{m}-\mu_{w},\frac{\sigma_{m}^{2}}{n_{m}}+\frac{\sigma_{w}^{2}}{n_{w}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+if 
+\begin_inset Formula $\sigma_{m}^{2}$
+\end_inset
+
+and 
+\begin_inset Formula $\sigma_{w}^{2}$
+\end_inset
+
+ are known, then the this approximate normal distribution can be used to
+ compute p-values for the test of the null hypothesis.
+ In practice, however, these population variances are typically unknown
+ so they must be estimated.
+\end_layout
+
+\begin_layout Itemize
+Thus the 
+\emph on
+standard error
+\emph default
+ of 
+\begin_inset Formula $\overline{Y}_{m}-\overline{Y}_{w}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+SE(\overline{Y}_{m}-\overline{Y}_{w})=\sqrt{\frac{s_{m}^{2}}{n_{m}}+\frac{s_{w}^{2}}{n_{w}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Difference Between Two Means
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The t-statistic for testing the null hypothesis is constructed analogously
+ to the t-statistic for testing a hypothesis about a single population mean,
+ thus 
+\emph on
+t-statistic
+\emph default
+ for comparing two means is 
+\begin_inset Formula 
+\[
+t=\frac{\overline{Y}_{m}-\overline{Y}_{w}-d_{0}}{SE(\overline{Y}_{m}-\overline{Y}_{w})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If both 
+\begin_inset Formula $n_{m}$
+\end_inset
+
+and 
+\begin_inset Formula $n_{m}$
+\end_inset
+
+ are large, then this t-statistic has a standard normal distribution when
+ the null hypothesis is true.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Confidence Intervals for the Difference Between Two Population Means
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the 95% two-sided confidence interval for 
+\begin_inset Formula $d$
+\end_inset
+
+ consists of those values of d within 
+\begin_inset Formula $\pm1.96$
+\end_inset
+
+ standard errors of 
+\begin_inset Formula $\overline{Y}_{m}-\overline{Y}_{w}$
+\end_inset
+
+ , thus 
+\begin_inset Formula $d=\mu_{m}-\mu_{w}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+(\overline{Y}_{m}-\overline{Y}_{w})\pm1.96SE(\overline{Y}_{m}-\overline{Y}_{w})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Wrap Up
+\end_layout
+
+\end_body
+\end_document
