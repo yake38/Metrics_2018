@@ -1,1 +1,7 @@
 theme: jekyll-theme-minimal
+
+title: [Introduction to Metrics]
+description: [Course homepage:Introduction to Econometrics at Business School,Nanjing University]
+logo: [Location of the logo]
+show_downloads: ["true"]
+google_analytics: [UA-123672411-1]
