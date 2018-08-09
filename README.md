@@ -6,6 +6,17 @@
 
 - [Syllabus](https://github.com/MetricsNJU/Metrics_2018/blob/master/Syllabus/Syllabus_2018Fall.pdf) 
 
+### Slides(课堂讲义）
+
+
+### Math Review (数学复习）
+
+
+
+### Computer Lab Exercise(上机练习）
+
+
+
 
 ## 2017年
 
@@ -29,6 +40,11 @@
 - [Lecture 11](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Slides/2017_Lec11.pdf)
 - [Lecture 12](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Slides/2017_Lec12.pdf)
 - [Lecture 13](https://github.com/MetricsNJU/Metrics_2018/blob/master/2017old/Slides/Final_Review_print.pdf)
+
+### Math Review (数学复习）
+
+- [Recite 1](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Recite_1/Recite_1_Qu.pdf)
+- [Recite 2](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Recite_2/Recite_2_Qu.pdf)
 
 ### Computer Lab Exercise(上机练习）
 
