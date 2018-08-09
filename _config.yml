@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: [Introduction to Metrics]
-description: [Introduction to Econometrics at Business School,Nanjing University]
-#logo: [Location of the logo]
+title: [Intro to Metrics]
+description: [An Course taught by Professor Zhaopeng Qu,Business School,NJU]
+logo: [https://github.com/MetricsNJU/Metrics_2018/blob/master/Pics/ashenfelter.jpg]
 show_downloads: ["true"]
 google_analytics: [UA-123672411-1]
