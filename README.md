@@ -8,6 +8,9 @@
 
 ### Slides(课堂讲义）
 
+- Introduction [Lecture 0](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec0.pdf)
+- Causal Inference in Social Science [Lecture 1]
+
 
 ### Math Review (数学复习）
 
