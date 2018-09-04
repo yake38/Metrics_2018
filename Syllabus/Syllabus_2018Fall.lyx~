@@ -314,7 +314,7 @@ Wechat ID
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Sabrina101088;17826029699
 \end_layout
 
 \end_inset
@@ -395,7 +395,7 @@ Time:
 \begin_layout Plain Layout
 
 \color black
-Monday 9：00-12：00 am
+Monday 9:00-12:00 am
 \end_layout
 
 \end_inset
@@ -422,8 +422,11 @@ Course Description
 \begin_layout Standard
 
 \size large
-This course introduces students to modern causal inference methods for analyzing
- data in economics and other social sciences.
+This course introduces students to modern 
+\series bold
+causal inference methods
+\series default
+ for analyzing data in economics and other social sciences.
  The goal is to help student develop a solid theoretical background in introduct
 ory level econometrics, the ability to implement modern techniques and to
  critique empirical studies in economics and other social sciences.
@@ -1407,6 +1410,24 @@ Final Review
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /Users/byelenin/Dropbox/NJU/Teaching/2018Fall/Introduction_To_Econometrics/Slides/Lec0/Figs/Wechat.jpeg
+	width 60page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -1636,7 +1657,7 @@ Lab1: Introduction to Stata and R
 \begin_inset Text
 
 \begin_layout Plain Layout
-5
+6
 \end_layout
 
 \end_inset
@@ -1809,7 +1830,7 @@ Lab5: DE in Stata and R
 \begin_inset Text
 
 \begin_layout Plain Layout
-11/8
+11/6
 \end_layout
 
 \end_inset
@@ -1829,7 +1850,7 @@ Lab5: DE in Stata and R
 \begin_inset Text
 
 \begin_layout Plain Layout
-9:00-12:00am
+8:00-10:00am
 \end_layout
 
 \end_inset
