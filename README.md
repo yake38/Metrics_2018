@@ -14,7 +14,7 @@
 
 ### Math Review (数学复习）
 
-
+- [Recite 1](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Recite_1/recite_1_review of probability (2).pdf)
 
 ### Computer Lab Exercise(上机练习）
 
