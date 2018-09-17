@@ -5,6 +5,11 @@ institute: "**Business School,Nanjing University**"
 author: "Jing Bu"
 date: "9/18/2018"
 
+header-includes:
+    \usepackage{ctex}
+    \usepackage{color}
+
+
 output: 
   beamer_presentation:
     keep_tex: false
@@ -13,50 +18,54 @@ output:
     latex_engine: xelatex
     theme: CambridgeUS
     toc: true
+    incremental: false
 ---
 
 # Population,Parameters and Random Sampling
 
 ## Population,Sample and i.i.d
-### A population is a collection of people, items, or events about  which  you  want to make inferences.
 
-- Population always  have a probability distribution.
+- A **population** is a collection of people, items, or events about  which  you  want to make inferences.
 
-### A sample is a subset of population, which draw from population in a certain way.
-### To represent the population well,a sample should be randomly collected and adequately large.
-- Infinite population 
-- Finite population
-- With replacement
-- Without replacement: when the population size N is very large,compared with the sample size n, then we could say that they are nearly independent.
+  - Population always  have a probability distribution.
 
----
+-  A **sample** is a subset of population, which draw from population in a certain way.
 
-### Definition
-- The r.v.s are called a random sample of size n from the population f(x) if $X_1, ..., X_n$ are mutually independent and have the same p.d.f/p.m.f f(x). Alternatively, $X_1, ..., X_n$ are called independent,and identically distributed random variable with p.d.f/p.m.f ,commonly abbreviated to i.i.d. r.v.s.
+- To represent the population well,a sample should be randomly collected and adequately large.
 
-- eg.Random sample of n respondents on a survey question.
-- And the joint p.d.f/p.m.f of $X_1,...,X_n$ is given by $f(x_1,...,x_n)=f(x_1)...f(x_n)=\prod^{n}_{i=1}f(x_i)$
+  - **Infinite population** 
+  - **Finite population**
+  - **sampling with replacement**
+  - **sampling without replacement**: when the population size N is very large,compared with the sample size n, then we could say that they are nearly independent.
 
-### Definition
-- $X_1,...,X_n$ is a random sample of size n from the population f(x). A statistic is a real-valued or vector-valued function fully depended on $X_1, ..., X_n$, thus $$T = T(X_1,...,X_n)$$
+## Definition: random sample
+- The r.v.s are called a random sample of size n from the population f(x) if $X_1, ..., X_n$ are mutually independent and have the same p.d.f/p.m.f f(x). 
+- Alternatively, $X_1, ..., X_n$ are called independent,and identically distributed random variable with p.d.f/p.m.f ,commonly abbreviated to i.i.d. r.v.s.
 
-- and the probability distribution of a statistic T is called the sampling distribution of T.
-- A statistic is  only a function of the sample.
+  - eg.Random sample of n respondents on a survey question.
 
----
+- And the joint p.d.f/p.m.f of $X_1,...,X_n$ is given by $$f(x_1,...,x_n)=f(x_1)...f(x_n)=\prod^{n}_{i=1}f(x_i)$$
 
-## Sample  Mean and Sample Variance
+## Definition: sampling distribution
 
-### Definition
+- $X_1,...,X_n$ is a random sample of size n from the population $f(x)$. 
 
-- The sample average or sample mean X of the n observations $X_1, ..., X_n$ is $$\bar{X}=\frac{1}{n}(X_1+X_2+...+X_n)=\frac{1}{n} \sum_{i=1}^{n}X_i$$
-The sample variance is the statistic defined by 
+- A **statistic** is a real-valued or vector-valued function fully depended on $X_1, ..., X_n$, thus $$T = T(X_1,...,X_n)$$
+
+  - eg. the expectation of  sample is a statistic 
+  - A statistic isonly a function of the sample.
+
+- the probability distribution of a statistic,$T$ is called the **sampling distribution** of $T$.
+
+## Sample Mean and Sample Variance
+
+- The sample average or **sample mean** X of the n observations $X_1, ..., X_n$ is $$\bar{X}=\frac{1}{n}(X_1+X_2+...+X_n)=\frac{1}{n} \sum_{i=1}^{n}X_i$$
+The **sample variance** is the statistic defined by 
 $$S^2=\frac{1}{n-1}\sum_{i=1}^{n}(X_i-\bar{X})$$
 
-- we could assume that the sample mean has some certain probability functions to describe its distributions
-- what is the expectation, variance or p.d.f./c.d.f of this distribution?
+- Assume that the sample mean has some certain probability functions to describe its distributions: the sampling distribution of the sample mean.
 
----
+- What is the expectation, variance or p.d.f./c.d.f of this distribution?
 
 ## A simple case of sample mean
 \includegraphics{picture.png}
@@ -69,45 +78,53 @@ $$S^2=\frac{1}{n-1}\sum_{i=1}^{n}(X_i-\bar{X})$$
 ## Sampling Distributions
 
 1. There are two approaches to characterizing sampling distributions: 
-- exact/finite sample distribution: The sampling distribution that exactly  describes the distribution of X for any n is called the exact/finite sample distribution of X.
-- approximate/asymptotic distribution: when the sample size n is large, the sample distribution approximates to a  certain distribution function.
-2. Two key tools used to approximate sampling distributions when the sample size is large,assume that $n\rightarrow\infty$
-- The Law  of Large  Numbers(L.L.N.):when the sample size is large,X will be close to $\mu_Y$ the population mean with very high probability
-- The Central Limit Theorem(C.L.T.): when the sample size is large,the sampling  distribution of the standardized  sample average,$\frac{(\bar{Y}-\mu_Y)}{\sigma_Y}$ is approximately normal. 
+- **exact/finite sample distribution**
 
----
+  - The sampling distribution that exactly  describes the distribution of X for any n is called the exact/finite sample distribution of X.
+  
+- **approximate/asymptotic distribution** 
+
+  - when the sample size n is large, the sample distribution approximates to a  certain distribution function.
+
+## L.L.N and C.L.T
+
+2. Two key tools used to approximate sampling distributions when the sample size is large,assume that $n\rightarrow\infty$
+
+- **The Law  of Large  Numbers(L.L.N.)**: when the sample size is large,$X$ will be close to $\mu_Y$ the population mean with very high probability.
+
+- **The Central Limit Theorem(C.L.T.)**: when the sample size is large,the sampling distribution of the standardized sample  average,$\frac{(\bar{Y}-\mu_Y)}{\sigma_Y}$ is approximately normal. 
 
 ## Convergence in probability
-### Definition
 
-- Let $X_1,...,X_n$ be an random variables or sequence, is said to converge in probability to a value b if for every  $\varepsilon > 0$,$$P(\|X_n-b\|>\varepsilon)\rightarrow 0$$
-as $n\rightarrow \infty$ We write this $X_n \mathop{\longrightarrow}^{p} b$ or $plim(X_n)=b$
+- **Definition**: Let $X_1,...,X_n$ be an random variables or sequence, is said to converge in probability to a value b if for every  $\varepsilon > 0$,$$P(\|X_n-b\|>\varepsilon)\rightarrow 0$$
+as $n\rightarrow \infty$, We write this $X_n \stackrel{p}\longrightarrow b$ or $plim(X_n)=b$
 
-- it is similar to the concept of a limitation in a probability way.
+- Similar to the concept of a limitation in a probability way.
 
 ## the Law  of Large Numbers
+
 ### Theorem
 
 - Let $X_1,...,X_n$ be an i.i.d draws from a distribution with mean $\mu$ and finite variance $\sigma$ (a population)
 $\bar{X_n}=\frac{1}{n}\sum_{i=1}^{n} X_i$ is the sample mean then $$\bar{X}\rightarrow\mu$$
 
-- Intuition:the distribution of ??collapses?? $\bar{X}$ on $\mu$
+- Intuition:the distribution of collapses(what do you mean here?) $\bar{X}$ on $\mu$
 
 ---
 
 ## A simple case
 
 ### Example
-- Suppose X has a Bernoulli distribution if it have a binary values $X\varepsilon {0, 1}$ and its probability mass  function is 
+- Suppose $X$ has a **Bernoulli** distribution if it have a binary values $X\in {0, 1}$ and its probability mass function is 
 $$
 P(X=x)=
 \left \{\begin{array}{cc}
-0.78,& if x=1 \cr
-0.22,& if x=0
+0.78,& if\;x=1 \cr
+0.22,& if \;x=0
 \end{array}\right.
 $$
 
-- Then E(X)=p=0.78 and Var(X)=p(1-p)=0.1716
+- Then $E(X)=p=0.78$ and $Var(X)=p(1-p)=0.1716$
 
 ---
 
@@ -116,10 +133,10 @@ $$
 
 ---
 
-### Definition
+### Definition(to which defination?)
 
-- Let $X_1,...,X_n$ be a sequence of r.v.s, and for n = 1,2,... let $F_n(x)$ be the c.d.f of $X_n$.Then it is said that $X_1,X_2,...$ converges in distribution to r.v.W with c.d.f, $F_W$ if $$\mathop{lim}_{n\longrightarrow\infty}F_n(x)=F_W(x)$$
-which we write as $X_n \rightarrow^p\mu$
+- Let $X_1,...,X_n$ be a sequence of r.v.s, and for n = 1,2,... let $F_n(x)$ be the c.d.f of $X_n$.Then it is said that $X_1,X_2,...$ **converges** in distribution to $W$ with c.d.f, $F_W$ if $$\mathop{lim}_{n\longrightarrow\infty}F_n(x)=F_W(x)$$
+which we write as $X_n \stackrel{p}\longrightarrow \mu$
 
 - Basically: when n is big, the distribution of $X_n$ is very similar to the distribution of w.
 - Common to standardize a r.v. by subtracting its expectation and dividing by its standard deviation
@@ -136,15 +153,15 @@ $$
 \frac{\bar{X_n}-\mu}{\frac{\sigma}{\sqrt{n}}}\stackrel{d}{\longrightarrow} N(0,1)
 $$
 
-- Because we don??t have to make specific assumption about the distribution of $X_i$, so whatever the distribution of $X_i$, when n is big the standardized $\bar{X_n}\sim N(\mu,\frac{\sigma^2}{n})$
+- Because we don't have to make specific assumption about the distribution of $X_i$, so whatever the distribution of $X_i$, when n is big the standardized $\bar{X_n}\sim N(\mu,\frac{\sigma^2}{n})$
 
 ---
 
 \includegraphics{picture2.png}
 
-## How large is ¡°large enough¡±?
+## How large is "large enough"?
 
-1. How large is ??large enough???
+1. How large is ??large enough???(Please check)
 - how large must n be for the distribution of Y to be approximately normal?
 2. The answer:it depends.
 - if $Y_i$ are themselves normally distributed,then Y is exactly normally distributed for all n.
@@ -350,9 +367,10 @@ The probabilistic interpretation comes from the fact that for 95% of all random 
 
 ---
 
-\includegraphics{picture6.png}
-
 \newpage
+
+---
+
 
 # Hypothesis Testing
 
@@ -393,7 +411,7 @@ In both cases, there is a certain risk that our conclusion  is  wrong.
 
 ### Type I Error
 
-- A Type I error is when we reject the null hypothesis when it is in fact true.(¡°left-wing¡±)
+- A Type I error is when we reject the null hypothesis when it is in fact true.(??left-wing??)
 
 - We say that the Lady is discerning when she is just guessing(null hypothesis: she is just guessing)
 
@@ -513,6 +531,11 @@ $$
 \newpage
 
 # **Thank you**
+
+
+
+
+
 
 
 
