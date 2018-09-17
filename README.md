@@ -14,8 +14,8 @@
 
 ### Math Review (数学复习）
 
-- [Recite 1](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Recite_1/recite_1_review_of_probability.pdf)
-- [Recite 2](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Recite_2/recite2_Bujing_new.pdf)
+- 9/11 [Recite 1](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Recite_1/recite_1_review_of_probability.pdf)
+- 9/18 [Recite 2](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Recite_2/recite2_Bujing_new.pdf)
 
 
 ### Computer Lab Exercise(上机练习）
