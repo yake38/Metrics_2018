@@ -9,8 +9,13 @@
 ### Slides(课堂讲义）
 
 - 9/6 Introduction:[Lecture 0](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec0.pdf)
+
 - 9/13 Causal Inference in Social Science [Lecture 1](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec1.pdf)
-- 9/20 Causal Inference in Social Science [Lecture 2](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec2.pdf)
+
+- 9/20 Causal Inference in Social Science [Lecture 2](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec2A.pdf)
+
+- 9/27 Causal Inference in Social Science [Lecture 3](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec2B.pdf)
+
 ### Math Review (数学复习）
 
 - 9/11 [Recite 1](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Recite_1/recite_1_review_of_probability.pdf)
@@ -19,8 +24,7 @@
 
 ### Computer Lab Exercise(上机练习）
 
-
-
+- 9/25 Introduction to Stata and R 
 
 ## 2017年
 
