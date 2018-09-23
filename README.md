@@ -22,8 +22,8 @@
 
 ### Computer Lab Exercise(上机练习）
 
-- Pre  Installation: [Stata](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata安装教程.pdf) and [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/R语言的安装与应用.pdf)
-- 9/25 Introduction: [Stata](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata.pdf) and [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/how_to_use_R.pdf)
+- Pre  Installation: [Stata](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata安装教程.pdf),[R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/R语言的安装与应用.pdf)
+- 9/25 Introduction: [Stata](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata.pdf), [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/how_to_use_R.pdf)
 
 ## 2017年
 
