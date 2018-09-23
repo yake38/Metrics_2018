@@ -25,7 +25,7 @@
 - Pre  Installation: 
 
   - [Stata](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata安装教程.pdf)
-  - [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/R语言的安装与应用.pdf)
+  - [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/R语言的简介与安装.pdf)
   
 - 9/25 Introduction: 
 
