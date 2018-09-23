@@ -1,0 +1,222 @@
+---
+title: "**R 的简介与安装**"
+institute: "**南京大学**"
+author: "卜京"
+date: "9/25/2018"
+
+header-includes:
+    \usepackage{ctex}
+    \usepackage{color}
+
+
+output: 
+  beamer_presentation:
+    keep_tex: false
+    colortheme: dolphin
+    fonttheme: professionalfonts
+    latex_engine: xelatex
+    theme: CambridgeUS
+    toc: false
+    incremental: false
+---
+
+# 学习目标
+
+- 完成R, RStudio、Ctex 和 Pandoc的安装
+- 因为  R 本身是开源软件，其核心团队规模和资源都有限，不可能把各种衍生功能都包含在 R 软件中。装了上述软件后，无论是分析数据、画图，还是完成精美的报告和展示文档你都感受到它们的强大魅力！
+
+---
+
+# 安装 R
+
+- 各位小伙伴们按照自己的操作系统分别点击下面的链接就可以进入 R 软件的下载页面了。现在最新的版本是 R-3.5.1
+- R for Windows: [windows](https://cran.rproject.org/bin/windows/base/)
+- https://cran.rproject.org/bin/windows/base/
+- R for Mac: [Mac](https://cran.r-project.org/bin/macosx/)
+- https://cran.r-project.org/bin/macosx/
+
+---
+
+# 安装 R
+
+- 当然也可以从 R 软件的官方主页首页进入。官方主页上有很多关于R软件的信息和资料，有兴趣的同学可以学习参考！请别问我为什么没 有中文网页？进入计量软件和程序员的世界里你就会发现，几乎所有的最新信息和应用开发都是来自于英文世界。当然，现在随着 R 及相 关应用的广泛传播，中文资源也开始多了起来，但还是无法跟英文资源相提并论。
+
+- 有的时候，R 会让你选择一个镜像(Mirror)。镜像是跟主站是一个相对的概念。本质上相当于互联网上的分公司或品牌连锁店，这样可让你在本地就能享受到跟主站完全相同的“美食”或“服务”，而不必要出远门。尤其是对国外访问动不动就莫名其妙失灵，的中国用户来说，本地镜像的重要性就更加不言而喻了。
+
+---
+
+# 安装 R
+
+\includegraphics{picture1.jpg}
+
+---
+
+# 安装 R
+
+\includegraphics{picture2.png}
+
+---
+
+# 安装 R
+
+\includegraphics{picture3.png}
+
+---
+
+# 安装 R
+
+\includegraphics{picture4.png}
+
+---
+
+# 安装 R
+
+\includegraphics{picture5.png}
+
+---
+
+# 安装 R
+
+\includegraphics{picture6.png}
+
+---
+
+# 安装 R
+
+\includegraphics{picture7.png}
+
+---
+
+# 安装 R
+
+\includegraphics{picture8.png}
+
+---
+
+# 安装RStudio
+
+- R 本身随便也带了一个编辑器，叫R-Script，但不是很好用。R软件本身功能很强大，但很多配套功能都比较差。比如很多命令执行之后，不能立即展示结果，要看到这些结果，还需要再执行一些特殊命令，实在是比较繁琐。所以 RStudio 这样的 IDE(Integrated Development Environment) 就自然而然的有了需求。 IDE 可以简单理解成一个基于 R 基础上的开发的一个能使 R 更易用、 具有更多功能的软件。RStudio 目前是目前公认最好的，也是应用最广泛的关于 R 的 IDE。R 本身是不需要付费的，但 RStudio 的企业版 是必须要付费才能使用。好在我们只用免费的个人版就行了。
+
+- 可以直接访问  RStudio 公司主页来下载:[RStudio](https://www.rstudio.com/products/rstudio/download/)
+
+---
+
+# 安装RStudio
+
+\includegraphics{picture10.png}
+
+---
+
+# 安装RStudio
+
+\includegraphics{picture11.png}
+
+---
+
+# 安装RStudio
+
+\includegraphics{picture12.png}
+
+---
+
+# 安装RStudio
+
+\includegraphics{picture13.png}
+
+---
+
+# 安装Latex相关软件
+
+- Latex 是一种文字编辑处理排版的软件。简单理解是相当于另一种 office 软件（集合了 Word 和 Powerpoint 的功能）。与 Word 的简单区别在于 Latex 不是 “所见即所得”式的软件，即我们不能随意的在窗口里调整整个文档的格式，而是要通过各种函数、命令或者程序包的设定来确定文字版面的格式。
+
+- Latex 的好处在于美观，这种美观性来自于格式的规范和准确。尤其是当在文中包含大量公式和图表等内容时，不会出现错位和乱码等问题。这方面使用过 Word 输入过公式和图表的同学都感受过 “不能对齐”  的痛苦。
+
+- 想要使用Latex必须要学习 Latex“语法”。这其实是一整套的文字编辑的语言，如果想要全部掌握，也没有那么容易。正如虽然 几乎每天我们都使用 word, 但 word里的大部分功能我们都很少使用一样。学习Latex也可以先从最简单的方式开始，很多复杂的功能等到以后碰到问题需要时再学习应用。在本课程的内容中，大家只需要安装好即可。
+
+---
+
+## 安装 MikTeX与CTex
+
+- MikTex 是 Windows下最好用的 Tex系统。
+- MikTex 安装也比较容易，访问 MikTex 官方主页，找到相应的下载安 装包，安装即可。
+- CTex 是一个基于中文系统的 Latex 安装包，里边包含了 Windows 系 统下最好用的 TeX 系统——MikTeX。
+- CTex 安装也比较容易，访问 CTex 主页: [CTeX](http://www.ctex.org/HomePage) 
+- http://www.ctex.org/HomePage
+- 找到相应的安装下载包，安装即可。推荐安装 Full version
+
+---
+
+## 安装 MikTeX与CTex
+
+\includegraphics{picture14.png}
+
+---
+
+## 安装 MikTeX与CTex
+
+\includegraphics{picture15.png}
+
+---
+
+## 安装 MikTeX与CTex
+
+\includegraphics{picture16.png}
+
+---
+
+## 安装 Mactex(for Mac Users)
+
+- Mac OS系统下TeX系统要安装 MacTeX（文件很大，没办法）。
+- 安装也比较容易，访问 MacTex 主页：[MacTex](https://www.tug.org/mactex/)
+- https://www.tug.org/mactex/
+- 找到相应的安装下载包，推荐Full version, 硬盘空间小的同学也可以装Smaller version
+
+---
+
+# 安装 Pandoc
+
+- Pandoc是一种文本转换工具，可以把各种格式的文本文件转换成我们 需要的格式，我们这里使用它主要是为了把以 Markdown 写成的文档 转换成 PDF、Html 等大家喜闻乐见的形式（其实也可以设定转换成大家最熟悉的Word)
+- Pandoc项目的主页：[Pandoc](https://pandoc.org/)
+- https://pandoc.org/
+- 进入 “installing”，分别选择Windows或Mac OS X系统下载
+
+---
+
+# 安装 Pandoc
+
+\includegraphics{picture17.png}
+
+---
+
+
+# 安装 Pandoc
+
+\includegraphics{picture18.png}
+
+---
+
+# 安装 Pandoc
+
+\includegraphics{picture19.png}
+
+---
+
+
+# 安装 Pandoc
+
+\includegraphics{picture20.png}
+
+---
+
+# 结束
+
+- 至此，我们就暂时完成了 R 软件学习的所有软件安装工作。
+
+
+- 关于这些软件的内容、功能和使用，网上有很多相关的介绍,很多都非常全面非常详细，我们的课其实只是给大家开个头，后面的很多应用还等待大家去自我探索。
+
+
+
+
+
+
