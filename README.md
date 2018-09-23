@@ -22,7 +22,8 @@
 
 ### Computer Lab Exercise(上机练习）
 
-- 9/25 Introduction to Stata and R 
+- Pre  Installation: [Stata] (https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata安装教程.pdf)
+- 9/25 Introduction: [Stata] (https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata.pdf)
 
 ## 2017年
 
