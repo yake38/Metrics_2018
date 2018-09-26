@@ -36,6 +36,8 @@
 ### Homeworks(课后作业）
 
 - [HW1](https://github.com/MetricsNJU/Metrics_2018/blob/master/HWs/HW1.pdf)
+  - [DataSet: Rand.dta](https://github.com/MetricsNJU/Metrics_2018/blob/master/HWs/rand.dta)
+
 - HW2
 - HW3 
 - HW4 
