@@ -32,6 +32,14 @@
 
   - [Stata](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata.pdf)
   - [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/how_to_use_R.pdf)
+  
+### Homeworks(课后作业）
+
+- [HW1](https://github.com/MetricsNJU/Metrics_2018/blob/master/HWs/HW1.pdf)
+- HW2
+- HW3 
+- HW4 
+- HW5   
 
 ## 2017年
 
