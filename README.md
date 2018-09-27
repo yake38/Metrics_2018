@@ -44,6 +44,14 @@ and CEF and Regression: [Lecture 3](https://github.com/MetricsNJU/Metrics_2018/b
 - HW4 
 - HW5   
 
+### Research Projects(Proposal) 
+
+- [Guide](https://github.com/MetricsNJU/Metrics_2018/blob/master/HWs/Guide_2018.pdf)
+
+
+
+
+
 ## 2017年
 
 
