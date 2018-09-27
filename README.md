@@ -12,8 +12,9 @@
 
 - 9/13 Causal Inference in Social Science: [Lecture 1](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec1.pdf)
 - 9/20 Causal Inference in Social Science: [Lecture 2](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec2.pdf)
-- 9/27 OLS Regression: [Lecture 3]
-- 9/29 OLS Regression: [Lecture 4]
+- 9/27 RCT estimation and Inference [Lecture 2B](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec2B.pdf)
+and CEF and Regression: [Lecture 3](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec3A.pdf)
+- 9/29 OLS Regression: [Lecture 3B](https://github.com/MetricsNJU/Metrics_2018/blob/master/Slides/Metrics_2018_Lec3B.pdf)
 
 ### Math Review (数学复习）
 
