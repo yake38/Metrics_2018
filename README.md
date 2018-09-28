@@ -36,7 +36,7 @@ and CEF and Regression: [Lecture 3](https://github.com/MetricsNJU/Metrics_2018/b
   
 ### Homeworks(课后作业）
 
-- [HW1](https://github.com/MetricsNJU/Metrics_2018/blob/master/HWs/HW1.pdf) (**9/29 updated**) **due to 10/11**
+- [HW1](https://github.com/MetricsNJU/Metrics_2018/blob/master/HWs/HW1.pdf) ($\color{red}{9/29}$ **updated**) **due to 10/11**
   - [DataSet: Rand.dta](https://github.com/MetricsNJU/Metrics_2018/blob/master/HWs/rand.dta)
 
 - HW2
