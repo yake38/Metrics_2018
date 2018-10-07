@@ -1,0 +1,91 @@
+# Markdown in Stata
+## 1. What is markdown?
+Markdown is a markup language that can be written using a plain text editor. It allows plain text content to be formatted with simple markup syntax.
+
+## 2. Why should we study markdown?
+
+> * Markdown's syntax is easy to learn, and its feature is more powerful than plain text.
+
+> * It is easy to turn markdown into ppt,pdf and a word document.
+
+## 3. What can we use markdown to do?
+### 3.1 make a to-do list
+- [ ] read a book
+
+- [x] do homework
+
+- [x] watch a movie
+
+### 3.2 write formula
+
+
+$$E=mc^2$$
+
+
+
+## 4. How to use markdown?
+
+### 4.1 title
+
+H1 :# Header 1
+
+H2 :## Header 2
+
+H3 :### Header 3
+
+H4 :#### Header 4
+
+H5 :##### Header 5
+
+H6 :###### Header 6
+
+### 4.2 Italic and bold
+*ltalic*
+**bold**
+
+## 5. How to combine markdown and stata?
+### 5.1 Requirements
+The command uses an external Markdown processor, John MacFarlane's **pandoc**, which can be downloaded for Linux, Mac or Windows from *pandoc.org/installing*.  Generating Word documents requires Pandoc2.0 or higher. It also requires the Stata command **whereis**, available from SSC.  This command is used to keep track of ancillary programs and is usually installed together with **markstat**.  After downloading pandoc, you save the location of the executable in the whereis database by running the command *whereis pandoc* location.
+
+If you want to generate PDF output you also need LaTeX, specifically **pdflatex**, which comes with MiKTeX on Windows, MacTeX on Macs or Live TeX on Linux. You save the location of the converter by running the command *whereis pdflatex* location.  This is also used for Beamer presentations.
+
+### 5.2 code
+whereis pandoc "C:\Users\Sabrina\Desktop\econometrics\stata15\pandoc.exe"
+whereis pdflatex "C:\Users\Sabrina\Desktop\econometrics\stata15\MiKTeX 2.9\miktex\bin\x64\pdflatex.exe"
+markstat using filename [, pdf docx slides beamer mathjax bundle bibliography strict nodo nor keep]
+
+## 6. example
+### 6.1 Nerlove
+	clear
+	import excel "C:\Users\Sabrina\Desktop\econometrics\nerlove.xls", firstrow clear 	
+	la data "Nerlove 1963 paper"
+	describe
+	list TC Q
+	hist Q, width(1000) frequency
+	kdensity Q
+	scatter TC Q
+	gen n=_n
+	scatter TC Q, mlabel(n) mlabpos(6)
+	twoway (scatter TC Q)(lfit TC Q)
+	graph save scatter1
+	twoway (scatter TC Q)(qfit TC Q)
+	graph save scatter2
+	graph combine scatter1.gph scatter2.gph
+	graph export scatter3.png
+![scatter](scatter3.png)
+
+### 6.2 a new one
+Let us read the fuel efficiency data that ships with Stata
+	sysuse auto, clear  
+To study how fuel efficiency depends on weight it is useful to transform the dependent variable from "miles per gallon" to "gallons per 100 miles"
+	gen gphm = 100/mpg  
+We then obtain a fairly linear relationship 
+	twoway scatter gphm weight || lfit gphm weight  ///
+	 , ytitle(Gallons per Mile) legend(off)	
+	graph export auto.png, width(500) replace 
+![Fuel Efficiency by Weight](auto.png)
+The regression equation estimated by OLS is 
+	regress gphm weight 
+Thus, a car that weighs 1,000 pounds more than another requires on average an extra 1.4 gallons to travel 100 miles.
+That's all for now!
+

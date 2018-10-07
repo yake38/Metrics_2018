@@ -1,0 +1,279 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Sabrina\Desktop\markstat.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 7 Oct 2018, 08:44:25
+{txt}
+{com}. //_1
+. clear
+{txt}
+{com}. import excel "C:\Users\Sabrina\Desktop\econometrics\nerlove.xls", firstrow clear     
+{res}{txt}
+{com}. la data "Nerlove 1963 paper"
+{txt}
+{com}. describe
+
+{txt}Contains data
+  obs:{res}           145                          Nerlove 1963 paper
+{txt} vars:{res}             5                          
+{txt} size:{res}         4,060                          
+{txt}{hline}
+              storage   display    value
+variable name   type    format     label      variable label
+{hline}
+{p 0 48}{res}{bind:TC             }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}TC{p_end}
+{p 0 48}{bind:Q              }{txt}{bind: int     }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}Q{p_end}
+{p 0 48}{bind:PL             }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}PL{p_end}
+{p 0 48}{bind:PF             }{txt}{bind: double  }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}PF{p_end}
+{p 0 48}{bind:PK             }{txt}{bind: int     }{bind:{txt}%10.0g    }{space 1}{bind:         }{bind:  }{res}{res}PK{p_end}
+{txt}{hline}
+Sorted by: 
+{res}     Note: Dataset has changed since last saved.
+{txt}
+{com}. list TC Q
+{txt}
+     {c TLC}{hline 9}{c -}{hline 7}{c TRC}
+     {c |} {res}     TC       Q {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+  1. {c |} {res}   .082       2 {txt}{c |}
+  2. {c |} {res}   .661       3 {txt}{c |}
+  3. {c |} {res}    .99       4 {txt}{c |}
+  4. {c |} {res}   .315       4 {txt}{c |}
+  5. {c |} {res}   .197       5 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+  6. {c |} {res}   .098       9 {txt}{c |}
+  7. {c |} {res}   .949      11 {txt}{c |}
+  8. {c |} {res}   .675      13 {txt}{c |}
+  9. {c |} {res}   .525      13 {txt}{c |}
+ 10. {c |} {res}   .501      22 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 11. {c |} {res}  1.194      25 {txt}{c |}
+ 12. {c |} {res}    .67      25 {txt}{c |}
+ 13. {c |} {res}   .349      35 {txt}{c |}
+ 14. {c |} {res}   .423      39 {txt}{c |}
+ 15. {c |} {res}   .501      43 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 16. {c |} {res}    .55      63 {txt}{c |}
+ 17. {c |} {res}   .795      68 {txt}{c |}
+ 18. {c |} {res}   .664      81 {txt}{c |}
+ 19. {c |} {res}   .705      84 {txt}{c |}
+ 20. {c |} {res}   .903      73 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 21. {c |} {res}  1.504      99 {txt}{c |}
+ 22. {c |} {res}  1.615     101 {txt}{c |}
+ 23. {c |} {res}  1.127     119 {txt}{c |}
+ 24. {c |} {res}   .718     120 {txt}{c |}
+ 25. {c |} {res}  2.414     122 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 26. {c |} {res}   1.13     130 {txt}{c |}
+ 27. {c |} {res}   .992     138 {txt}{c |}
+ 28. {c |} {res}  1.554     149 {txt}{c |}
+ 29. {c |} {res}  1.225     196 {txt}{c |}
+ 30. {c |} {res}  1.565     197 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 31. {c |} {res}  1.936     209 {txt}{c |}
+ 32. {c |} {res}  3.154     214 {txt}{c |}
+ 33. {c |} {res}  2.599     220 {txt}{c |}
+ 34. {c |} {res}  3.298     234 {txt}{c |}
+ 35. {c |} {res}  2.441     235 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 36. {c |} {res}  2.031     253 {txt}{c |}
+ 37. {c |} {res}  4.666     279 {txt}{c |}
+ 38. {c |} {res}  1.834     290 {txt}{c |}
+ 39. {c |} {res}  2.072     290 {txt}{c |}
+ 40. {c |} {res}  2.039     295 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 41. {c |} {res}  3.398     299 {txt}{c |}
+ 42. {c |} {res}  3.083     324 {txt}{c |}
+ 43. {c |} {res}  2.344     333 {txt}{c |}
+ 44. {c |} {res}  2.382     338 {txt}{c |}
+ 45. {c |} {res}  2.657     353 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 46. {c |} {res}  1.705     353 {txt}{c |}
+ 47. {c |} {res}   3.23     416 {txt}{c |}
+ 48. {c |} {res}  5.049     420 {txt}{c |}
+ 49. {c |} {res}  3.814     456 {txt}{c |}
+ 50. {c |} {res}   4.58     484 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 51. {c |} {res}  4.358     516 {txt}{c |}
+ 52. {c |} {res}  4.714     550 {txt}{c |}
+ 53. {c |} {res}  4.357     563 {txt}{c |}
+ 54. {c |} {res}  3.919     566 {txt}{c |}
+ 55. {c |} {res}  3.442     592 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 56. {c |} {res}  4.898     671 {txt}{c |}
+ 57. {c |} {res}  3.584     696 {txt}{c |}
+ 58. {c |} {res}  5.535     719 {txt}{c |}
+ 59. {c |} {res}  4.406     742 {txt}{c |}
+ 60. {c |} {res}  4.289     795 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 61. {c |} {res}  6.731     800 {txt}{c |}
+ 62. {c |} {res}  6.895     808 {txt}{c |}
+ 63. {c |} {res}  5.112     811 {txt}{c |}
+ 64. {c |} {res}  5.141     855 {txt}{c |}
+ 65. {c |} {res}   5.72     860 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 66. {c |} {res}  4.691     909 {txt}{c |}
+ 67. {c |} {res}  6.832     913 {txt}{c |}
+ 68. {c |} {res}  4.813     924 {txt}{c |}
+ 69. {c |} {res}  6.754     984 {txt}{c |}
+ 70. {c |} {res}  5.127     991 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 71. {c |} {res}  6.388    1000 {txt}{c |}
+ 72. {c |} {res}  4.509    1098 {txt}{c |}
+ 73. {c |} {res}  7.185    1109 {txt}{c |}
+ 74. {c |} {res}    6.8    1118 {txt}{c |}
+ 75. {c |} {res}  7.743    1122 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 76. {c |} {res}  7.968    1137 {txt}{c |}
+ 77. {c |} {res}  8.858    1156 {txt}{c |}
+ 78. {c |} {res}  8.588    1166 {txt}{c |}
+ 79. {c |} {res}  6.449    1170 {txt}{c |}
+ 80. {c |} {res}  8.488    1215 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 81. {c |} {res}  8.877    1279 {txt}{c |}
+ 82. {c |} {res} 10.274    1291 {txt}{c |}
+ 83. {c |} {res}  6.024    1290 {txt}{c |}
+ 84. {c |} {res}  8.258    1331 {txt}{c |}
+ 85. {c |} {res} 13.376    1373 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 86. {c |} {res}  10.69    1420 {txt}{c |}
+ 87. {c |} {res}  8.308    1474 {txt}{c |}
+ 88. {c |} {res}  6.082    1497 {txt}{c |}
+ 89. {c |} {res}  9.284    1545 {txt}{c |}
+ 90. {c |} {res} 10.879    1649 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 91. {c |} {res}  8.477    1668 {txt}{c |}
+ 92. {c |} {res}  6.877    1782 {txt}{c |}
+ 93. {c |} {res} 15.106    1831 {txt}{c |}
+ 94. {c |} {res}  8.031    1833 {txt}{c |}
+ 95. {c |} {res}  8.082    1838 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+ 96. {c |} {res} 10.866    1787 {txt}{c |}
+ 97. {c |} {res}  8.596    1918 {txt}{c |}
+ 98. {c |} {res}  8.673    1930 {txt}{c |}
+ 99. {c |} {res} 15.437    2028 {txt}{c |}
+100. {c |} {res}  8.211    2057 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+101. {c |} {res} 11.982    2084 {txt}{c |}
+102. {c |} {res} 16.674    2226 {txt}{c |}
+103. {c |} {res}  12.62    2304 {txt}{c |}
+104. {c |} {res} 12.905    2341 {txt}{c |}
+105. {c |} {res} 11.615    2353 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+106. {c |} {res}  9.321    2367 {txt}{c |}
+107. {c |} {res} 12.962    2451 {txt}{c |}
+108. {c |} {res} 16.932    2457 {txt}{c |}
+109. {c |} {res}  9.648    2507 {txt}{c |}
+110. {c |} {res}  18.35    2530 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+111. {c |} {res} 17.333    2576 {txt}{c |}
+112. {c |} {res} 12.015    2607 {txt}{c |}
+113. {c |} {res}  11.32    2870 {txt}{c |}
+114. {c |} {res} 22.337    2993 {txt}{c |}
+115. {c |} {res} 19.035    3202 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+116. {c |} {res} 12.205    3286 {txt}{c |}
+117. {c |} {res} 17.078    3312 {txt}{c |}
+118. {c |} {res} 25.528    3498 {txt}{c |}
+119. {c |} {res} 24.021    3538 {txt}{c |}
+120. {c |} {res} 32.197    3794 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+121. {c |} {res} 26.652    3841 {txt}{c |}
+122. {c |} {res} 20.164    4014 {txt}{c |}
+123. {c |} {res} 14.132    4217 {txt}{c |}
+124. {c |} {res}  21.41    4305 {txt}{c |}
+125. {c |} {res} 23.244    4494 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+126. {c |} {res} 29.845    4764 {txt}{c |}
+127. {c |} {res} 32.318    5277 {txt}{c |}
+128. {c |} {res} 21.988    5283 {txt}{c |}
+129. {c |} {res} 35.229    5668 {txt}{c |}
+130. {c |} {res} 17.467    5681 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+131. {c |} {res} 22.828    5819 {txt}{c |}
+132. {c |} {res} 33.154    6000 {txt}{c |}
+133. {c |} {res} 32.228    6119 {txt}{c |}
+134. {c |} {res} 34.168    6136 {txt}{c |}
+135. {c |} {res} 40.594    7193 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+136. {c |} {res} 33.354    7886 {txt}{c |}
+137. {c |} {res} 64.542    8419 {txt}{c |}
+138. {c |} {res} 41.238    8642 {txt}{c |}
+139. {c |} {res} 47.993    8787 {txt}{c |}
+140. {c |} {res} 69.878    9484 {txt}{c |}
+     {c LT}{hline 9}{c -}{hline 7}{c RT}
+141. {c |} {res} 44.894    9956 {txt}{c |}
+142. {c |} {res}  67.12   11477 {txt}{c |}
+143. {c |} {res}  73.05   11796 {txt}{c |}
+144. {c |} {res}139.422   14359 {txt}{c |}
+145. {c |} {res}119.939   16719 {txt}{c |}
+     {c BLC}{hline 9}{c -}{hline 7}{c BRC}
+
+{com}. hist Q, width(1000) frequency
+{txt}(bin={res}17{txt}, start={res}2{txt}, width={res}1000{txt})
+{res}{txt}
+{com}. kdensity Q
+{res}{txt}
+{com}. scatter TC Q
+{res}{txt}
+{com}. gen n=_n
+{txt}
+{com}. scatter TC Q, mlabel(n) mlabpos(6)
+{res}{txt}
+{com}. twoway (scatter TC Q)(lfit TC Q)
+{res}{txt}
+{com}. graph save scatter1
+{res}{txt}(file scatter1.gph saved)
+
+{com}. twoway (scatter TC Q)(qfit TC Q)
+{res}{txt}
+{com}. graph save scatter2
+{res}{txt}(file scatter2.gph saved)
+
+{com}. graph combine scatter1.gph scatter2.gph
+{res}{txt}
+{com}. graph export scatter3.png
+{txt}(file scatter3.png written in PNG format)
+
+{com}. //_2
+. sysuse auto, clear  
+{txt}(1978 Automobile Data)
+
+{com}. //_3
+. gen gphm = 100/mpg  
+{txt}
+{com}. //_4
+. twoway scatter gphm weight || lfit gphm weight  ///
+>  , ytitle(Gallons per Mile) legend(off)    
+{res}{txt}
+{com}. graph export auto.png, width(500) replace 
+{txt}(file auto.png written in PNG format)
+
+{com}. //_5
+. regress gphm weight 
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        74
+{txt}{hline 13}{c +}{hline 34}   F(1, 72)        = {res}   194.71
+{txt}       Model {c |} {res} 87.2964969         1  87.2964969   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 32.2797639        72  .448330054   {txt}R-squared       ={res}    0.7300
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.7263
+{txt}       Total {c |} {res} 119.576261        73  1.63803097   {txt}Root MSE        =   {res} .66957
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        gphm{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}weight {c |}{col 14}{res}{space 2}  .001407{col 26}{space 2} .0001008{col 37}{space 1}   13.95{col 46}{space 3}0.000{col 54}{space 4}  .001206{col 67}{space 3} .0016081
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .7707669{col 26}{space 2} .3142571{col 37}{space 1}    2.45{col 46}{space 3}0.017{col 54}{space 4} .1443069{col 67}{space 3} 1.397227
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. //_^
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\Sabrina\Desktop\markstat.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 7 Oct 2018, 08:44:37
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
