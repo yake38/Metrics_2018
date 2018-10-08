@@ -34,10 +34,11 @@ and CEF and Regression: [Lecture 3](https://github.com/MetricsNJU/Metrics_2018/b
   - [Stata](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata.pdf)
   - [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/how_to_use_R.pdf)
   
- - 10/9 Introduction2: 
+- 10/9 Introduction2: 
 
   - [Stata](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/Stata/stata.pdf)
-  - [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/how_to_use_R(2).pdf) 
+  - [R](https://github.com/MetricsNJU/Metrics_2018/blob/master/Review_and_Lab/R/how_to_use_R（2）.pdf) 
+  
   
 ### Homeworks(课后作业）
 
