@@ -78,9 +78,9 @@ detach(cars_data_small)
 
 - Draw a scatter plot of the variable testscr against str:
 ```{r scatter, echo=TRUE}
-attach(cars_data_small)
-plot(str, testscr)
-abline(lm(testscr ~ str , data = cars_data_small),col = "red")
+attach(cars_data_small)#使用attach的数据
+plot(str, testscr)#对str和teststr画图
+abline(lm(testscr ~ str , data = cars_data_small),col = "red")#画线，拟合testscr和str（数据来自cars_data_small），颜色为红色
 ```
 
 
@@ -92,19 +92,19 @@ abline(lm(testscr ~ str , data = cars_data_small),col = "red")
 
 ```{r scatter2,echo=TRUE,message=FALSE,warning=FALSE,error=FALSE}
 library("ggplot2")
-ggplot(data =cars_data_small,aes(x=str, y=testscr)) +
-geom_point(shape=1) + # Use hollow circles
-geom_smooth(method=lm) # Add linear regression line
+ggplot(data =cars_data_small,aes(x=str, y=testscr)) + #用cars_data_small中的数据，x轴是str，y轴是testscr
+geom_point(shape=1) + # Use hollow circles，画点，1表示空心点，2可能表示实心点
+geom_smooth(method=lm) # Add linear regression line，画回归线，方式是拟合
 ```
 
 
 ## A kdensity distribution of income
 
 ```{r kensity1, echo=TRUE}
-cars_data$inc <- with(cars_data,avginc >=15)
+cars_data$inc <- with(cars_data,avginc >=15) #无用，是当时忘了删了
 ggplot(cars_data,aes(x=avginc))+
 geom_density(fill="grey",color ="blue")+
-geom_vline(xintercept = 15)
+geom_vline(xintercept = 15) #画一条横坐标是15的垂线
 ```
 
 
@@ -147,55 +147,55 @@ summary(cars_data_small$testscr)
 
 
 ```{r t-test1, echo=TRUE}
-t.test(cars_data_small$testscr,alternative = "two.sided",mu = 650)
+t.test(cars_data_small$testscr,alternative = "two.sided",mu = 650) #对cars_data_small中的testscr数据；（备择？）检验是双边；看均值mu是否等于650.（得出来的P值非常小，因此拒绝原假设）
 ```
-# OLS Regression
+# OLS Regression #OLS回归
 
-- https://cran.r-project.org/doc/contrib/Ricci-refcard-regression.pdf
+- https://cran.r-project.org/doc/contrib/Ricci-refcard-regression.pdf #介绍了OLS的相关指令
 
 ```{r reg, echo=TRUE}
-fm1 <- lm(testscr ~ str,data = cars_data_small)
+fm1 <- lm(testscr ~ str,data = cars_data_small) #使用lm回归，前面因变量后面自变量
 summary(fm1)
 ```
 
 
 ## OLS Regression 2
 ```{r reg2, echo=TRUE}
-fm2 <- lm(testscr ~ str,data = cars_data)
+fm2 <- lm(testscr ~ str,data = cars_data) 
 summary(fm2)
 ```
 
 ## OLS Regression 3
 ```{r reg3, echo=TRUE}
-fm3 <- lm(testscr ~ str+meal_pct,data = cars_data)
+fm3 <- lm(testscr ~ str+meal_pct,data = cars_data) #加号表示两个自变量的回归（meal是领取营养午餐人数）
 
 summary(fm3)
 ```
 
 ## OLS Regression 4
 ```{r reg4, echo=TRUE}
-fm4 <- lm(testscr ~ str+meal_pct+computer,data = cars_data)
+fm4 <- lm(testscr ~ str+meal_pct+computer,data = cars_data) #三个自变量的回归，
 
 summary(fm4)
 ```
 
-## OLS Regression 5
+## OLS Regression 5 #加平方项的处理
 ```{r reg5, echo=TRUE}
-fm5 <- lm(testscr ~ str+I(str^2),data = cars_data)
+fm5 <- lm(testscr ~ str+I(str^2),data = cars_data) #I是为了让str^2回复算术意义，不加I的话str^2有其他的R命令意义
 
 summary(fm5)
 ```
 
-## OLS Regression 6
+## OLS Regression 6 #交互项
 ```{r reg6, echo=TRUE}
-fm6 <- lm(testscr ~ str+str:el_pct,data = cars_data)
+fm6 <- lm(testscr ~ str+str:el_pct,data = cars_data) #两个自变量相乘——str:el_pct，表示str和el_pct相乘。交互项求导之后不是常数，即边际效应是一个因变量。用的时候必须有依据认为……
 
 summary(fm6)
 ```
 
 \includegraphics{picture32.png}
 
-# Published Tables: Stargazer
+# Published Tables: Stargazer #输出表格
 
 ```{r pub, echo=TRUE,messages=FALSE,warning=FALSE,error=FALSE}
 #install.packages("stargazer",repos = "http://mirrors.ustc.edu.cn/CRAN/")
@@ -204,16 +204,16 @@ library("stargazer")
 
 ## Published Tables: Stargazer1
 ```{r pub1, echo=TRUE,messages=FALSE, warnings=FALSE,error=FALSE,results= "asis"}
-stargazer(fm1,fm3,fm4,title="Regression Results1")
+stargazer(fm1,fm3,fm4,type="text",title="Regression Results1") #输出回归的结果做成的表格，要加type="text"，但是用knit生成Rmarkdown的时候需要去掉，
 ```
 
 ## Published Tables: Stargazer2
 ```{r pub3, echo=TRUE,messages=FALSE, warnings=FALSE,error=FALSE,results= "asis"}
-stargazer(fm1,fm3,fm4,title="Regression Results2", add.lines = TRUE)
+stargazer(fm1,fm3,fm4,title="Regression Results2", add.lines = TRUE) #add.line表示加了一行，这一行的文字是TURE（用途可能是做表格的说明，例如数据来源）
 ```
 
 ## Published Tables: Stargazer3
 ```{r pub4, echo=TRUE,messages=FALSE, warnings=FALSE,error=FALSE,results= "asis"}
-stargazer(fm1,fm3,fm4, title="Regression Results3", ci = TRUE)
+stargazer(fm1,fm3,fm4, title="Regression Results3", ci = TRUE) #在括号中生成的从标准误改为置信区间
 ```
 
